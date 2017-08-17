@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>蔡甸玉贤大东湖刘氏宗谱</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="resources/commons/mui/css/mui.min.css" rel="stylesheet">
+<link href="resources/commons/mui/css/icons-extra.css" rel="stylesheet">
+<link href="resources/commons/iconfontApp/iconfont.css" rel="stylesheet">
+<link href="resources/commons/cssApp/appCommons.css" rel="stylesheet">
+<link href="resources/app/publishPage/publishPage.css" rel="stylesheet">
+</head>
+<body>
+   <header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<a class="mui-pull-right mui-icon mui-icon-search"></a>
+		<h1 class="mui-title">蔡甸玉贤大东湖刘氏宗谱..</h1>
+	</header>
+	<div class="pulishPage">
+		<ul>
+			<li><img src="resources/app/publishPage/img/bookPage.png" data-preview-src="" data-preview-group="1"></li>
+			<li><img src="resources/app/publishPage/img/bookPage.png" data-preview-src="" data-preview-group="1"></li>
+		</ul>
+	</div>
+	<div class="directoryBtn"><span class="mui-icon mui-icon-list"></span></div>
+	<div class="popover">
+		<div class="popoverBox">
+			<div class="directory">
+				<div class="directoryTitle">目录</div>
+				<div class="directoryLi">凡例</div>
+				<div class="directoryLi">总目录</div>
+				<div class="directoryLi">第一章<span>绪论</span></div>
+				<div class="directorySubli">
+					<div class="directorySubliText">第一节<span>序言</span></div>
+					<div class="directorySubliText">第三节<span>派文</span></div>
+				</div>
+				<div class="directoryLi">第一章<span>绪论</span></div>
+				<div class="directorySubli">
+					<div class="directorySubliText">第一节<span>序言</span></div>
+					<div class="directorySubliText">第三节<span>派文</span></div>
+				</div>
+				<div class="directoryLi">第一章<span>绪论</span></div>
+				<div class="directorySubli">
+					<div class="directorySubliText">第一节<span>序言</span></div>
+					<div class="directorySubliText">第三节<span>派文</span></div>
+				</div>
+				<div class="directoryLi">第一章<span>绪论</span></div>
+				<div class="directorySubli">
+					<div class="directorySubliText">第一节<span>序言</span></div>
+					<div class="directorySubliText">第三节<span>派文</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="resources/commons/jsApp/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="resources/commons/mui/js/mui.min.js"></script>
+<script src="resources/commons/mui/js/mui.zoom.js"></script>
+<script src="resources/commons/mui/js/mui.previewimage.js"></script>
+<script type="text/javascript">
+mui.previewImage();
+// Popover
+var popoverHeight=$(window).height();
+$('.popover').height(popoverHeight-44)
+$('.directoryBtn').on('tap',function(event){
+ 	var e=window.event || event;
+    if(e.stopPropagation){
+        e.stopPropagation();
+    }else{
+        e.cancelBubble = true;
+    }
+    $('.popover').show();
+    $('body').addClass('overflowHidden');
+ })
+  $(".popoverBox").on('tap',function(event){
+		var e=window.event || event;
+		if(e.stopPropagation){
+			e.stopPropagation();
+		}else{
+			e.cancelBubble = true;
+		}
+	});
+  $(document).on('tap',function(event){
+  	$('.popover').hide();
+  	$('body').removeClass('overflowHidden');
+  })//空白点击隐藏
+</script>
+</html>

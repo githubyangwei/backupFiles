@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>注册</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="resources/commons/mui/css/mui.min.css" rel="stylesheet">
+<link href="resources/commons/mui/css/icons-extra.css" rel="stylesheet">
+<link href="resources/commons/iconfontApp/iconfont.css" rel="stylesheet">
+<link href="resources/commons/cssApp/appCommons.css" rel="stylesheet">
+<link href="resources/app/register/register.css" rel="stylesheet">
+<link href="resources/commons/mui/css/mui.picker.css" rel="stylesheet" />
+<link href="resources/commons/mui/css/mui.poppicker.css" rel="stylesheet" />
+</head>
+<body>
+   <header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">注册</h1>
+		<a class="mui-pull-right registerText">登录</a>
+	</header>
+	<div class="login">
+	    <div class="registerBox borderBottom">
+	    	<div class="registerName"><span class="mui-icon mui-icon-contact"></span></div>
+	    	<div class="registerLine"></div>
+	    	<div class="registerInput"><input type="text" placeholder="请输入用户名"></div>
+	    </div>
+	    <div class="registerBox borderBottom">
+	    	<div class="registerName"><span class="mui-icon mui-icon-locked"></span></div>
+	    	<div class="registerLine"></div>
+	    	<div class="registerInput"><input type="text" placeholder="请输入密码"></div>
+	    </div>
+	    <div class="registerBox borderBottom">
+	    	<div class="registerName"><span class="mui-icon mui-icon-locked"></span></div>
+	    	<div class="registerLine"></div>
+	    	<div class="registerInput"><input type="text" placeholder="请再次输入密码"></div>
+	    </div>
+	    <div class="registerBox borderBottom">
+	    	<div class="registerName"><span class="mui-icon mui-icon-personadd"></span></div>
+	    	<div class="registerLine"></div>
+	    	<div class="registerInput">
+				<div class="mui-content-padded">
+					<button id='showUserPicker' class="mui-btn mui-btn-block" type='button'>刘</button>
+				</div>
+	    	</div>
+	    </div>
+	    <div class="registerBox">
+	    	<div class="registerName"><span class="mui-icon mui-icon-phone"></span></div>
+	    	<div class="registerLine"></div>
+	    	<div class="registerInput"><input type="text" placeholder="请输入您的手机号"></div>
+	    </div>
+	</div>
+	<div class="registerBtn">注册</div>
+</body>
+<script type="text/javascript" src="resources/commons/jsApp/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="resources/commons/mui/js/mui.min.js"></script>
+<script src="resources/commons/mui/js/mui.picker.js"></script>
+<script src="resources/commons/mui/js/mui.poppicker.js"></script>
+<script type="text/javascript">
+     (function($, doc) {
+     	$.init();
+     	$.ready(function() {
+     		//普通示例
+     		var userPicker = new $.PopPicker();
+     		userPicker.setData([{
+     			text: '刘'
+     		}, {
+     			text: '王'
+     		}, {
+     			text: '张'
+     		}, {
+     			text: '李'
+     		}, {
+     			text: '史'
+     		}, {
+     			text: '章'
+     		}, {
+     			text: '庄'
+     		}, {
+     			text: '关'
+     		}, {
+     			text: '毛'
+     		}, {
+     			text: '朱'
+     		}]);
+     		var showUserPickerButton = doc.getElementById('showUserPicker');
+     		var userResult = doc.getElementById('userResult');
+     		showUserPickerButton.addEventListener('tap', function(event) {
+     			userPicker.show(function(items) {
+     				showUserPickerButton.innerText = items[0].text;
+     				//返回 false 可以阻止选择框的关闭
+     				//return false;
+     			});
+     		}, false);
+     		//-----------------------------------------
+     	});
+     })(mui, document);
+     $('input').each(function(index, el) {
+     	$('input').eq(index).focus(function() {
+     		$(this).parent('.registerInput').siblings('.registerName').addClass("orangeColor")
+     	}).blur(function() {
+     		$(this).parent('.registerInput').siblings('.registerName').removeClass("orangeColor")
+     	})
+     });
+     $('.registerBtn').on('tap',function(event){
+     	$('input').each(function(index, el) {
+     		var allInputs = $('input').eq(index).val();
+            console.log(allInputs)
+        })
+        var surname=$('#showUserPicker').text();
+        console.log(surname)
+     })
+</script>
+</html>

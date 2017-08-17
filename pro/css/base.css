@@ -1,0 +1,108 @@
+*{   
+	margin: 0px;
+	padding: 0px;
+
+}
+li{
+	list-style: none;
+}
+input[type=button]{-webkit-appearance:none;outline:none;}
+html,body{
+	width: 100%;
+	height: 100%;
+  overflow: hidden;
+}
+
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	overflow: hidden;
+  z-index: 15;
+}
+.bottom_nav{
+    width: 100%;
+     display:inline-block;  /* Firefox */ 
+     display:-moz-box;
+     -moz-box-orient:horizontal; /* Safari, Opera, and Chrome */ 
+     display:-webkit-box;
+     -webkit-box-orient:horizontal; /* W3C */ 
+     display:box;
+     box-orient:horizontal;
+     line-height: 50px;
+     position: absolute;
+     left: 0;
+     z-index: 8;
+ }
+ .left_cas{
+ 	opacity: 0.1;
+  font-size: 20px;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+ }
+.bottom_nav_li{
+     height: 50px;
+     -webkit-box-flex: 1.0;
+     -moz-box-flex:1.0;
+      box-flex:1.0;
+      text-align: center;
+      line-height: 50px;
+      font-size: 13px;
+      position: relative;
+      background-color: white;
+      color: #444444;
+ }
+ .shadow{
+    box-shadow: 0px 3px 0px #AE7E02;
+    /*,2px -2px 10px #1D587E,-2px 2px 10px #1D587E,-2px -2px 10px #1D587E;*/
+ }
+ .none_c{
+  box-shadow: 0px 3px 0px #ddd;
+  background-color: #fff!important;
+  color: #DBDBDB!important;
+ }
+/*规则*/
+.gz_bg{
+  background-image: url(../img/bg1.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+  z-index: 0;
+}
+.game_rule{
+  padding-top: 25%;
+  height: 50%;
+  width: 100%;
+  text-align: center;
+}
+.game_rule>img{
+  height: 100%;
+}
+.gz_sure{
+  margin-top: 10%;
+}
+.gz_sure>input{
+  background-color: #FFE428;
+  color: #973D00;
+  border: none;
+  font-weight: bold;
+  padding: 14px 60px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+  @media screen and (min-width:370px) {
+    .bottom_nav_li{
+          font-size: 15px;
+     }
+  }

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-09-28 09:25:22
+ * @version $Id$
+ */
+.newsSubtitle{
+	margin-top: 10px;
+	font-size: 14px;
+	color: #979797;
+	position: relative;
+}
+.newsSubtitleMail{
+	margin-right: 63px;
+}
+.newsDate{
+	width: 60px;
+	text-align: right;
+	position: absolute;
+	right:0;
+	top:0;
+}
+.mui-media-body{
+	font-size: 16px;
+}

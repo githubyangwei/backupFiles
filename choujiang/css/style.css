@@ -1,0 +1,63 @@
+*{margin:0;padding:0;font-family:"微软雅黑";}
+a{text-decoration:none;}
+img{border:none;}
+li{list-style:none outside none;}
+body{background-color: #D74051;}
+.myBox{width: 100%;margin-top: 5px;}
+.cj{background-repeat: no-repeat;width: 85%;max-width: 720px;}
+.cj li{float:left;font-weight:bold;font-size:30px;line-height:50px;text-align:center;color:#fff;}
+.cj li>img{background-color: #FFC80C;}
+.cj li.adcls>img{background-color: #FFF6C3;}
+.bt{
+	font-weight:bold;
+	width:100px;
+	height:50px;
+	background:white;
+	color:black;
+	font-size:20px;
+	line-height:50px;
+	text-align:center;
+	cursor:pointer;
+	position: absolute;
+	vertical-align: middle;
+	background-color: transparent;
+}
+.bt>img{width: 100%;height: 100%;}
+#cj-a{margin:0 auto ;}
+.text{text-align:center;background:green;font:normal 12px/20px '微软雅黑';position:fixed;color:#fff;left:50%;width:100px;margin-left:-370px;}
+.text span{color:yellow;}
+.text.t1{top:10%;}
+.text.t2{top:20%;}
+
+.ding{position: relative;overflow: hidden;height: 85px;width: 85%;margin: 0 auto;max-width: 720px;}
+.ding>ul>li{line-height: 24px;font-size: 15px;color: black;margin-left: 10px;}
+li>span{font-size: 12px;color: white;}
+
+
+.title{width: 100%;text-align: center;}
+.title>img{width: 100%;max-width: 720px;margin-bottom: -5px;}
+.red{width: 100%;height: 10px;background-color: #D42B3E;}
+
+.content{width: 100%;background-image: url(../img/foot.jpg);max-width: 720px;background-size: 100%;background-position: bottom left;margin: 0 auto;}
+
+.line{width: 100%;background-color: #F18B99;font-size: 1px;height: 2px;margin: 10px 0;}
+
+.chance{text-align: center;width: 33%;max-width:238px;margin: 0 auto;}
+.chance>img{width: 100%;}
+
+.havechance{width: 100%;text-align: center;margin: 18px 0;}
+.havechance>span{color: white;}
+.havechance .yellow{color: #FEE306;}
+
+.otherhave{width: 85%;margin: 0 auto;color: white;font-size: 14px;max-width: 720px;}
+.otherhave>p{padding-left: 1px;}
+.sline{width: 100%;background-color:#EA6F83;font-size: 1px;height: 2px;margin: 5px 0 20px 0;}
+
+.foot{width: 100%;text-align: center;height: 80px; }
+
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>专家咨询</title> 
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta name="description" content="专家咨询" /> 
+<meta content=”telephone=no,email=no” name=”format-detection” /> 
+<meta name="Keywords" content="专家咨询"> 
+<meta name="apple-mobile-web-app-title" content="专家咨询界面 "> 
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/menu.css">
+<style type="text/css">
+html,body{background: #F2EFEF;}
+.m-c-t{margin-bottom: 20px;}
+.m-c-t .m-men-left,.m-c-t .m-men-right{min-height: 80px;padding: 10px;}
+.m-c-t .m-men-left img{width: 60px;height: 60px;float: left;}
+.m-c-t .m-men-left .m-c-talk{margin-left: 70px;border-radius: 3px;min-height: 30px;border: 1px solid #E2E0E0;background: #fff;position: relative;font-size: 16px;line-height: 30px;padding: 10px;}
+.m-c-t .m-men-left .m-j-left{position: absolute;width: 8px;height: 8px;background: transparent url(../img/jt_left.png) no-repeat;background-size: 100%;top: 8px;left: -8px;}
+.m-c-t .m-men-right img{width: 60px;height: 60px;float: right;}
+.m-c-t .m-men-right .m-c-talk{margin-right: 70px;border-radius: 3px;min-height: 30px;border: 1px solid #E2E0E0;background: #fff;position: relative;font-size: 16px;line-height: 30px;padding: 10px;}
+.m-c-t .m-men-right .m-j-right{position: absolute;width: 8px;height: 8px;background: transparent url(../img/jt_right.png) no-repeat;background-size: 100%;top: 8px;right: -8px;}
+
+
+
+.m-write{padding: 10px;background-color: #ccc}
+.m-write .m-w-sure{float: right;width: 75px;height: 40px;border: none;border-radius: 5px;background:#C20E0E;color: white;font-size: 16px;}
+.m-w-w{margin-right: 90px;height: 50px; }
+.m-w-w input{width: 100%;height: 40px;}
+
+</style>
+</head> 
+<body> 
+<div class="m-banner"></div>
+<div class="m-header">
+    <span>专家咨询</span>
+    <span  class="m-h-left-m"></span>
+</div>
+<div class="m-chart">
+    <ul class='m-c-t'>
+        <li class='m-men-left'>
+            <img src="../img/men.jpg" alt="">
+            <div class="m-c-talk">
+                <span class="m-j-left"></span>
+                <p>四大皆空和噶空间十分快接啊刷卡缴费空间撒后方可间十分快接啊刷卡缴费空间撒后方可间十分快接啊刷卡缴费空间撒后方可</p>
+            </div>
+        </li>
+        <li class='m-men-right'>
+            <img src="../img/men.jpg" alt="">
+            <div class="m-c-talk">
+                <span class="m-j-right"></span>
+                <p>四大皆空和噶空间十分快接啊刷卡缴费空间撒后方可间十分快接啊刷卡缴费空间撒后方可间十分快接啊刷卡缴费空间撒后方可</p>
+            </div>
+        </li>
+        <li class='m-men-left'>
+            <img src="../img/men.jpg" alt="">
+            <div class="m-c-talk">
+                <span class="m-j-left"></span>
+                <p>四大皆空</p>
+            </div>
+        </li>
+        <li class='m-men-right'>
+            <img src="../img/men.jpg" alt="">
+            <div class="m-c-talk">
+                <span class="m-j-right"></span>
+                <p>四大皆空和噶空间十分快接啊刷卡缴费空间撒后方</p>
+            </div>
+        </li>
+    </ul>
+    <div class="m-write"><input type="button" class='m-w-sure' value='发送'><div class="m-w-w"><input type="text" ></div></div>
+</div>
+
+<div class="m-cover">
+    <div class="m-c-banner">
+        <div class="m-c-b-cont">
+            <div class="m-login">
+               
+                <div class="m-u-login">
+                    <a href='register.html'>用户名：<span>西瓜酱</span></a>
+                    <a class='m-u-info' href='user.html'>用户中心</a>
+                </div>
+                 <img src="../img/men.jpg" alt="">
+            </div>
+            <ul class="m-c-list">
+                <li><a href="chazc.html"><img src="../img/icon01.png" alt="">查政策</a></li>
+                <li><a href="project_my.html"><img src="../img/icon02.png" alt="">选项目</a></li>
+                <li><a href="#"><img src="../img/icon03.png" alt="">找资金</a></li>
+                <li><a href="#"><img src="../img/icon04.png" alt="">招人才</a></li>
+                <li><a href="teachlist.html"><img src="../img/icon05.png" alt="">找专家</a></li>
+                <li><a href="#"><img src="../img/icon06.png" alt="">寻孵化</a></li>
+                <li><a href="#"><img src="../img/icon07.png" alt="">看案例</a></li>
+                <li><a href="#"><img src="../img/icon08.png" alt="">找伙伴</a></li>
+            </ul>
+        </div>
+    </div>
+</div> 
+
+</body> 
+<script type="text/javascript" src='../js/jquery-1.8.3.min.js'></script>
+<script type="text/javascript">
+    cover_act();
+
+ function cover_act(){
+    $('.m-h-left-m').click(function(event) {
+        $(".m-cover").animate({'left':'0'},500,'linear',function(){
+            $(".m-cover").css('background', 'rgba(0,0,0,0.6)'); 
+        })
+     });
+     $(".m-cover").click(function(event) {
+         $(".m-cover").css('background', 'transparent'); 
+         $(".m-cover").animate({'left':'-100%'},500,'linear')
+     });
+ }
+</script>
+</html>

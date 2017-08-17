@@ -1,0 +1,8 @@
+.m-search{position: relative;top:16px;border: 1px solid #E2E5F2}
+.m-search input{width: 100%;background-color: white;border: none;height: 50px;font-size: 18px;background-color: white;text-indent: 5px;}
+.m-search .m-search-icon{position: absolute;top: 0;right: 0; width: 50px;height: 50px;background:white url(../img/search_grey.png) 12px 12px no-repeat;background-size: 26px 26px;z-index: 22}
+.m-hotsearch{padding: 30px 0 10px 20px;font-size: 14px;}
+.m-hotword{padding: 20px 0;font-size: 16px;}
+.m-hotword ul{width: 100%;}
+.m-hotword ul>li{float: left;width: 33%;text-align: center;margin-bottom: 10px;}
+.m-hotword ul>li>a{color: black}

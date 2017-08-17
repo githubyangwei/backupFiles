@@ -1,0 +1,340 @@
+<!doctype html> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>指纹启动老虎机</title> 
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta name="description" content="锋尚PRO指纹快拍活动指纹启动老虎机" /> 
+<meta content="telephone=no,email=no" name="format-detection" /> 
+<meta name="Keywords" content="锋尚PRO指纹快拍,指纹启动老虎机"> 
+<meta name="apple-mobile-web-app-title" content="指纹启动老虎机 "> 
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<style type="text/css">
+	.content{
+		background-image: url(img/bg2.jpg);
+		background-size: 100% 100%;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+	}
+	.content>img{
+		margin-top: 16%;
+		height: 74.5%;
+		width: auto;
+	}
+	.lhj_title{
+		width: 100%;
+		position: absolute;
+		top: 9%;
+		text-align:center;
+	}
+	.lhjcontent{
+		width: 100%;
+		position: absolute;
+		top: 34%;
+		text-align: center;
+	}
+	.lhjcontent>img{
+		width: 300px;
+		/*height: 100px;*/
+	}
+	.lhj_name_title{
+		font-size: 13px;
+		color: #FF5C26;
+		position: absolute;
+		top: 17px;
+		width: 100%;
+		text-align: center;		
+	}
+	.lhj_name_title>span{
+		display: inline-block;
+		width: 260px;
+	}
+	.num_box{
+		position: absolute;
+		top: 0;
+		z-index: 10;
+		width: 300px;
+		height: 100px;
+		padding: 10px;
+		z-index: 8;
+	}
+	.num,.nums{
+		float: left;
+		background:url(img/num.png) top center repeat-y;
+		width: 45px;
+		height:	36px;
+		margin-left: 20px;
+		margin-top: 58px;
+		position: relative;
+	}
+	.num:nth-child(1){
+		left: 3px;
+	}
+	.num:nth-child(2){
+		left: 0px;
+	}
+	.num:nth-child(3){
+		left: -1px;
+	}
+	.num:nth-child(4){
+		left: -6px;
+	}
+	.num:nth-child(1){
+		left: 3px;
+	}
+
+	.nums{
+		background:url(img/addp.png) top center repeat-y;
+	}
+	.btns{
+		position: absolute;
+		top:66%;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		z-index: 12;
+	}
+	.btnss{
+		background-image: url(img/zw.png);
+		height: 105px;
+		width: 80px;
+		z-index: 5;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin: 0 auto;
+		moz-user-select: -moz-none;
+		-moz-user-select: none;
+		-o-user-select:none;
+		-khtml-user-select:none;
+		-webkit-user-select:none;
+		-ms-user-select:none;
+		user-select:none;
+	}
+
+	.over{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		display: none;
+		background-color: rgba(0,0,0,0.6);
+		overflow: hidden;
+	}
+	.cent{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		height: 60%;	
+	}
+	.cen_over{
+		position: relative;
+		left: -50%;
+		top: -50%;
+		width: 100%;
+		height: 100%;
+	}
+	.white_e{
+		width: 270px;
+		height: 235px;
+		margin: 0 auto;
+		background: white url(img/lhj_c.png) no-repeat top;
+		background-size: 100%;
+		border-radius: 6px;
+		position: relative;
+	}
+	.white_title{
+		width: 100%;
+		padding-top: 10px;
+		font-size: 20px;
+		font-weight: bold;
+		color: white; 
+		text-align: center;
+	}
+	.yellow_money{
+		color: #FFE427;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		margin: 5px 0 15px 0;
+	}
+	#pingjia{
+		width: 260px;
+		height: 120px;
+		padding: 10px 0 0 10px;
+		font-size: 20px;
+		line-height: 36px;
+		border: none;
+		resize:none;
+	}
+	.btn{
+		width: 100%;
+		margin-top: 20px;
+		text-align: center;
+	}
+	.btn>input{
+		background-color: #FFE428;
+		color: #973D00;
+		border: none;
+		font-weight: bold;
+		padding: 8px 60px;
+		font-size: 22px;
+		border-radius: 8px;
+	}
+	.over_change{
+		z-index: 3;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		opacity: 0;
+	}
+	.over_change>img{
+		width: 278px;
+		position: relative;
+		top: 10px;
+		
+	}
+	@media screen and (min-width:370px) {
+      .lhjcontent>img{
+      	width: 370px;
+      }
+      .lhj_name_title{
+      	font-size: 16px;
+      	top: 22px;
+      }
+      .num_box{
+      	width: 370px;
+      }
+      .btns{
+      	top: 66%;
+      }
+      .num{
+		margin-left: 33px;
+		margin-top: 80px;
+      }
+       .num:nth-child(1){
+			left: 3px;
+		}
+		.num:nth-child(2){
+			left: 2px;
+		}
+		.num:nth-child(3){
+			left: 0px;
+		}
+		.num:nth-child(4){
+			left: -1px;
+		}
+  	.btnss{
+		height: 123px;
+		width: 98px;
+		}
+	.over_change>img{
+	width: 346px;
+	}
+
+	}
+</style>
+</head> 
+<body> 
+	<div class="content">
+		<div class="lhj_title">
+			<img src="img/lhj_logo.png" width="100%"  alt="">
+		</div>
+		<div class="lhjcontent">
+			<img src="img/lhj1.png" id='lhjpng' alt="">
+			<div class="over_change">
+				<img src="img/add_g.png" alt="">
+				<img src="img/add_r.png" alt="">
+			</div>
+			<div class="lhj_name_title"><span>刷指纹为lena集资，赢取锋尚pro</span></div>
+			<div class="num_box">
+				 <div class="nums num"></div>
+			     <div class="num"></div>
+			     <div class="num"></div>
+			     <div class="num"></div>
+			</div>
+			
+		</div>
+		<div class="btns">
+			<div class="btnss" id="btnss"></div>
+		</div>
+	</div>
+
+	<div class="over">
+		<div class="cent">
+			<div class="cen_over">
+				<div class="white_e">
+					<div class="white_title">你成功为lena筹集</div>
+					<div class="yellow_money"><span id='cj_money'>256</span>元</div>
+					<textarea rows="3" id='pingjia' placeholder='为TA点评一下吧！'></textarea>
+				</div>
+				<div class="btn">
+					<input type="button" class="shadow" id='over_sue' value="确定">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="gz_bg">
+		<div class="game_rule">
+			<img src="img/e_content.png" alt="">
+		</div>
+
+		<div class="gz_sure">
+			<input type="button"  class="shadow" id='gz_sure' value="确定">
+		</div>
+	</div>
+	<footer>
+		<ul class="bottom_nav">
+			<li class="bottom_nav_li" onclick="C_turn('have.html')">获奖名单</li><span class="left_cas">|</span>
+			<li class="bottom_nav_li "  onclick="C_turn('lhj.html')">锋尚pro指纹快拍</li><span class="left_cas">|</span>
+			<li class="bottom_nav_li "  id="guizhe">活动规则</li>
+		</ul>
+	</footer>
+</body> 
+
+</html>
+
+<script type="text/javascript" src="js/jquery-1.7.2-min.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/touch-0.2.14.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$("#guizhe").click(function(event) {
+		$('.content').css({
+			'display': 'none',
+			'z-index': '0'
+		});
+		$('.gz_bg').css({
+			'display': 'block',
+			'z-index': '8'
+		});
+	});
+	$("#gz_sure").click(function(event) {
+		$('.gz_bg').css({
+			'display': 'none',
+			'z-index': '0'
+		});
+		$('.content').css({
+			'display': 'block',
+			'z-index': '8'
+		});
+	});
+	var lhjbol=true;
+	setInterval(function(){
+		if(lhjbol){
+			$('#lhjpng').attr("src","img/lhj2.png");
+			lhjbol=false;
+		}else{
+			$('#lhjpng').attr("src","img/lhj1.png");
+			lhjbol=true;
+		}
+	}, 300)
+});
+</script>

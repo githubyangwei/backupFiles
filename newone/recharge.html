@@ -1,0 +1,237 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>充值</title> 
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta name="description" content="充值" /> 
+<meta content=”telephone=no,email=no” name=”format-detection” /> 
+<meta name="Keywords" content="充值"> 
+<meta name="apple-mobile-web-app-title" content="充值界面 "> 
+<link rel="stylesheet" type="text/css" href="base.css">
+</head> 
+<style type="text/css">
+html,body{overflow-x: hidden;}
+.m-center{width: 92%;margin: 0 auto;}
+.m-banner{height: 50px;width: 100%;}
+.m-header{text-align: center;width: 100%;height: 50px;line-height: 50px;background: #096;color: white;font-size: 20px;position: relative;letter-spacing: 2px;position: fixed;top: 0px;z-index: 15}
+.m-somedate{text-align: left;padding-left: 10px;}
+.m-somedate div{display: inline-block;position: relative;}
+.m-somedate span{font-size: 14px;line-height: 36px;}
+.m-somedate .m-s-num{margin-right: 10px;color: #096}
+.m-somedate .m-s-money{font-size: 18px;color: red}
+.m-ad{padding:0 10px;}
+.m-ad h2{float: left}
+.m-ad div{margin-left:50px;padding-top: 4px;position: relative;overflow: hidden;height: 18px;}
+.m-ad div p{font-size: 14px;color: red;position: absolute;white-space:nowrap;top: 0;left: 0}
+.m-apply{margin:6px 6px 0;background: #fff}
+.m-apply table{width: 100%;border-collapse: collapse;border-color: transparent;}
+.m-apply h2{padding: 0 10px;}
+.m-apply tr{border-bottom: 1px solid #ddd;}
+.m-apply tr:last-child{border: none;}
+.m-apply .m-chose{padding: 0 10px 0 0;}
+.m-apply td{height: 50px;}
+.m-apply td span{float: right;}
+.m-apply td input,.m-apply td select{width: 100%;height: 30px;border: none;background: #ddd;}
+.m-apply .m-button{width: 80px;height: 40px;background: #096;line-height: 40px;color: white;margin: 5px auto;border-radius: 3px;font-size: 18px;text-align: center;}
+.m-other{margin: 10px 0 0 20px}
+#phonenumber{font-size: 18px}
+#gsd{font-size: 20px;color: red;}
+.m-other>ul>li{font-size: 16px;line-height: 50px;height: 50px;}
+.m-other>ul>li>a{color: #666}
+.m-other>ul>li img{width: 30px;height: 30px;margin-right: 10px;}
+#checkID{font-size: 16px;color: red;}
+#kindmoney{position: absolute;top: 0;left: 0px;height: 80px;background: #fff;z-index: 14;display: none;overflow: hidden;}
+#kindmoney>p{height: 26px;line-height: 26px;font-size: 14px;width: 500px;text-align: left;}
+#kindmoney>p>span{font-size: 16px;color: red;}
+@media screen and (max-width :325px) {
+.m-banner{height: 45px;} 
+.m-header{height: 45px;line-height: 45px;font-size: 18px}
+}
+
+</style>
+<body> 
+<div class="m-banner"></div>
+<div class="m-header">
+    <span>充值</span>
+</div>
+<div class="m-somedate">
+    <div class='m_s_left'>
+        <span>欢迎您：</span>
+        <span class='m-s-num'>123485</span>
+    </div>
+    <div  class='m_s_right'>
+        <span id='checkID' oncilck='tshow();'>点击查看账户信息</span>
+        <div id="kindmoney">
+            <p>可用金额：<span>1256.00</span>元</p>
+            <p>不可用余额：<span>1256.00</span>元</p>
+            <p>下级返点金额：<span>1256.00</span>元</p>
+        </div>
+    </div>
+</div>
+<div class="m-ad">
+    <h2>公告：</h2><div id='gundongw'><p id='gundong'>公告什么的公告什么的公告什么的公告什么的公告什么的</p></div>
+</div>
+<div class="m-apply">
+    <table border='1px'>
+        <tbody>
+            <tr><td colspan='2'><h2>手机充值</h2></td></tr>
+            <tr>
+                <td><span>手机号码：</span></td>
+                <td class='m-chose'><input type="number" id='phonenumber'></td>
+            </tr>
+            <tr>
+                <td><span>充值金额：</span></td>
+                <td class='m-chose'><select name="" id="applymoney">
+                    <option value="1">50元</option>
+                    <option value="2">100元</option>
+                    <option value="3">200元</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><span>归属地：</span></td>
+                <td class='m-chose'><div id="gsd"></div></td>
+            </tr>
+            <tr><td colspan='2'><div class="m-button">确定</div></td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="m-other">
+    <h2>其他服务</h2>
+    <ul>
+        <li><a href="apply.html"><img src="img/shenqing.png" alt=""><span>工号申请</span></a></li>
+        <li><a href="check.html"><img src="img/check.png" alt=""><span>充值查询</span></a></li>
+        <li><a href="transfer.html"><img src="img/zhuanahng.png" alt=""><span>内网转账</span></a></li>
+        <li><a href="reset.html"><img src="img/reset.png" alt=""><span>修改密码</span></a></li>
+        <li><a href="index.html"><img src="img/quit.png" alt=""><span class='red'>注销退出</span></a></li>
+    </ul>
+</div>
+
+</body> 
+<script type="text/javascript" src='js/jquery-1.8.3.min.js'></script>
+<script type="text/javascript" src='js/layer.m.js'></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        var bol=true;
+        $("#phonenumber").focus(function(event) {
+            bol=true;
+        });
+        var varss=0;
+        var maxw=$('#gundong').width()+50;
+        var divw=$('#gundongw').width()+10;
+       
+        setInterval(function(){
+            varss=varss+2;
+            $('#gundong').css('left', -varss);
+            if(varss>maxw){
+                varss=-divw;
+            }
+        }, 30)
+        $('#phonenumber').blur(function(event) {
+            if(bol){
+                bol=false;
+                
+                if($("#phonenumber").val()==''){
+                    layer.open({
+                        content: '请输入手机号！',
+                        style: 'width:280px;text-align: center;font-size:20px;',
+                        btn: ['确定']
+                    });
+                   
+                }else if(!$("#phonenumber").val().match(/^((1[3,5,8][0-9])|(14[5,7])|(17[0,6,7,8]))\d{8}$/)){
+                    layer.open({
+                        content: '请输入合法的手机号！',
+                        style: 'width:280px;text-align: center;font-size:20px;',
+                        btn: ['确定']
+                    });
+                    
+                }else{
+                    $.ajax({
+                      url: "http://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel="+$('#phonenumber').val(),
+                      cache: false,
+                      dataType : 'jsonp',
+                      success: function(date){
+                        if(!date.province){
+                            $('#gsd').html('归属地未知')
+                        }else{
+                            $('#gsd').html(date.province+'   '+date.catName)
+                        }
+                        
+                      }
+                    });
+                }
+            }
+            
+        });
+        $('.m-button').click(function(event) {
+           if($("#phonenumber").val()==''){
+                layer.open({
+                    content: '请输入手机号！',
+                    style: 'width:280px;text-align: center;font-size:20px;',
+                    btn: ['确定']
+                });
+                
+            }else if(!$("#phonenumber").val().match(/^((1[3,5,8][0-9])|(14[5,7])|(17[0,6,7,8]))\d{8}$/)){
+                layer.open({
+                    content: '请输入合法的手机号！',
+                    style: 'width:280px;text-align: center;font-size:20px;',
+                    btn: ['确定']
+                });
+                
+            }else if($("#applymoney").val()==''){
+                layer.open({
+                    content: '请输入充值金额！',
+                    style: 'width:280px;text-align: center;font-size:20px;',
+                    btn: ['确定']
+                });
+            }else{
+                layer.open({
+                    content: '充值中，请稍后........',
+                    shadeClose: false,
+                    style: 'width:280px;text-align: center;font-size:20px;',
+                });
+               // 这里加入ajax
+               setTimeout(function(){
+                   var date={'tip':1,'content':'充值成功'} ;// 模拟返回参数  var date={'tip':0,'content':'错误信息'} 
+                    layer.open({
+                        content: date.content,
+                        style: 'width:280px;text-align: center;font-size:20px;',
+                        btn: ['确定']
+                    });
+               },3000)
+            }
+        });
+        $('#checkID').click(function(event) {
+            /* Act on the event */
+           $('#kindmoney').css({
+               'display': 'block',
+               'height': '0'
+           });
+           $('#checkID').css('opacity', '0');
+           $('.m-ad').css('opacity', '0');
+           $('#kindmoney').animate({'height': '80px'}, 300,'linear')
+           setTimeout(function(){
+                tbol=true;
+           }, 100)
+
+        });
+        $('*').click(function(event) {
+            /* Act on the event */
+             thide();
+        });
+        
+    });
+var tbol=false;
+function thide(){
+    if(tbol){
+         $('#kindmoney').animate({'height': '0'}, 300,'linear',function(){
+            $('#kindmoney').css('display', 'none');
+            $('#checkID').css('opacity', '1');
+            $('.m-ad').css('opacity', '1');
+         })
+        }
+        tbol=false;
+}
+
+</script>
+</html>

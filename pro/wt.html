@@ -1,0 +1,256 @@
+<!doctype html> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>填写领奖信息</title> 
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta name="description" content="锋尚PRO指纹快拍活动填写领奖信息" /> 
+<meta content="telephone=no,email=no" name="format-detection" /> 
+<meta name="Keywords" content="锋尚PRO指纹快拍,填写领奖信息"> 
+<meta name="apple-mobile-web-app-title" content="填写领奖信息 "> 
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<style type="text/css">
+	.content{
+		background-image: url(img/bg1.jpg);
+		background-size: 100% 100%;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+	.title{
+		padding-top: 20%;
+		font-size: 20px;
+		color: white;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	.npss{
+		width: 90%;
+		margin: 0 auto;
+		height: auto;	
+		color: white;
+		text-align: left;
+		padding-bottom: 20px;
+	}
+	.name{
+		width: 100%;
+	}
+	.name>input,.phone>input,.sfz>input{
+		width: 100%;
+		border: none;
+		text-indent: 10px;
+		font-size: 16px;
+		line-height: 32px;
+		border-radius: 5px;
+		margin: 5px 0;
+	}
+	.shdz>textarea{
+		width: 100%;
+		border: none;
+		font-size: 16px;
+		line-height: 20px;
+		border-radius: 5px;
+		resize: none;
+		margin: 5px 0;
+	}
+	.sub>input{
+		background-color: #FFE428;
+		color: #973D00;
+		border: none;
+		font-weight: bold;
+		padding: 8px;
+		width: 100%;	
+		font-size: 16px;
+		border-radius: 4px;
+	}
+	.error{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		display: none;
+		background-color: rgba(0,0,0,0.6);
+		overflow: hidden;
+	}
+	.cent{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		height: 40%;	
+	}
+	.cen_error{
+		position: relative;
+		left: -50%;
+		top: -50%;
+		width: 100%;
+		height: 100%;
+	}
+	.white_e{
+		width: 85%;
+		height: 120px;
+		margin: 0 auto;
+		background-color: white;
+		border-radius: 6px;
+		position: relative;
+	}
+	.white_e>img{
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		top: 30px;
+		left: 20px;
+	}
+	#error_t{
+		font-size: 16px;
+		color: #444;
+		position: absolute;
+		top: 55px;
+		left: 100px;
+	}
+	.btn{
+		width: 100%;
+		margin-top: 20px;
+		text-align: center;
+	}
+	.btn>input{
+		background-color: #FFE428;
+		color: #973D00;
+		border: none;
+		font-weight: bold;
+		padding: 8px 60px;
+		font-size: 22px;
+		border-radius: 8px;
+	}
+</style>
+</head> 
+<body> 
+	<div class="content">
+		<div class="title"><span>填写领奖信息</span></div>
+		<div class="npss">
+			<div class="name">
+				<p>姓名：</p>
+				<input type="text" id='name'>
+			</div>
+			<div class="phone">
+				<p>手机号码：</p>
+				<input type="text" id='phone'>
+			</div>
+			<div class="sfz">
+				<p>身份证号码：</p>
+				<input type="text" id='sfz'>
+			</div>
+			<div class="shdz">
+				<p>收货地址</p>
+				<textarea rows="3" id='shdz'></textarea>
+			</div>
+			<div class="sub">
+				<input type="button" class="shadow" id="subm" value="提交">
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="error">
+		<div class="cent">
+			<div class="cen_error">
+				<div class="white_e">
+					<img src="img/error.png" alt="">
+					<span id="error_t">手机号码填写错误</span>
+				</div>
+				<div class="btn">
+					<input type="button" class="shadow" id='error_sue' value="确定">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gz_bg">
+		<div class="game_rule">
+			<img src="img/e_content.png" alt="">
+		</div>
+		<div class="gz_sure">
+			<input type="button"  class="shadow" id='gz_sure' value="确定">
+		</div>
+	</div>
+	<footer>
+		<ul class="bottom_nav">
+			<li class="bottom_nav_li" onclick="C_turn('have.html')">获奖名单</li><span class="left_cas">|</span>
+			<li class="bottom_nav_li "  onclick="C_turn('lhj.html')">锋尚pro指纹快拍</li><span class="left_cas">|</span>
+			<li class="bottom_nav_li "  id="guizhe">活动规则</li>
+		</ul>
+	</footer>
+</body> 
+<script type="text/javascript" src="js/jquery-1.7.2-min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$("#subm").click(function(event) {
+		/* Act on the event */
+		if($("#name").val()==''){
+			$('#error_t').html('姓名不能为空');
+			show_error();
+		}else if($("#phone").val()==''){
+			$('#error_t').html('手机号码不能为空');
+			show_error();
+		}else if($("#sfz").val()==''){
+			$('#error_t').html('身份证号码不能为空');
+			show_error();
+		}else if($("#shdz").val()==''){
+			$('#error_t').html('收货地址不能为空');
+			show_error();
+		}else{
+			// $.ajax({
+			// 	url: '/path/to/file',
+			// 	type: 'default GET (Other values: POST)',
+			// 	dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+			// 	data: {param1: 'value1'},
+			// })
+			// .done(function() {
+			// 	console.log("success");
+			// })
+			// .fail(function() {
+			// 	console.log("error");
+			// })
+			// .always(function() {
+			// 	console.log("complete");
+			// });
+			C_turn('tips.html')
+		}
+	});
+	$("#error_sue").click(function(event) {
+		/* Act on the event */
+		$(".error").hide();
+		$(".error").css('z-index', '0');
+	});
+	$("#guizhe").click(function(event) {
+		$('.content').css({
+			'display': 'none',
+			'z-index': '0'
+		});
+		$('.gz_bg').css({
+			'display': 'block',
+			'z-index': '8'
+		});
+	});
+	$("#gz_sure").click(function(event) {
+		$('.gz_bg').css({
+			'display': 'none',
+			'z-index': '0'
+		});
+		$('.content').css({
+			'display': 'block',
+			'z-index': '8'
+		});
+	});
+});
+function C_turn(url){
+	window.location.href=url;
+}
+function show_error(){
+	$(".error").css('z-index', '30');
+	$(".error").show();
+}
+</script>
+</html>

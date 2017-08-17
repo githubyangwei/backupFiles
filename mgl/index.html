@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html,body,canvas{
+            margin: 0;
+            padding: 0;
+        }
+        canvas{
+            background: #999;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="800" height="800"></canvas>
+    <img src="img/index_1.jpg" alt="">
+    <script type="text/javascript"> 
+
+    var myCanvas = document.getElementById("myCanvas");
+    var ctx = myCanvas.getContext("2d");
+    // var arc = new Arc(30,30,30);
+    var imgarc=new Imgarc('img/index_1.jpg',10,10,80,100);
+    drawimg(imgarc);
+        myCanvas.onmousedown = function(ev){
+            var disX = ev.clientX;
+            var disY = ev.clientY;
+            console.log((imgarc.x)<disX<(imgarc.x+imgarc.width))
+            console.log((imgarc.x-imgarc.width/2))
+            if((imgarc.x)<disX&&disX<(imgarc.x+imgarc.width)&&(imgarc.y)<disY&&disY<(imgarc.y+imgarc.height)){
+                myCanvas.onmousemove = function(ev){
+                    imgarc.x = ev.clientX-imgarc.width/2;
+                    imgarc.y = ev.clientY-imgarc.height/2;
+                    console.log(imgarc);
+                    drawimg(imgarc)
+                }
+
+            }else{
+                myCanvas.onmousemove = null;
+            }
+            myCanvas.onmouseup = function(){
+                myCanvas.onmousemove = null;
+            }
+        }
+        function Arc(x,y,r){
+            this.x = x;
+            this.y = y;
+            this.r = r;
+        }
+        
+        function Imgarc(src,x,y,height,width){
+            this.src=src;
+            this.x=x;
+            this.y=y;
+            this.height=height;
+            this.width=width;
+        }
+        function drawArc(obj){
+            ctx.clearRect(0, 0, myCanvas.width, myCanvas.height)
+            ctx.beginPath()
+            ctx.arc(obj.x, obj.y, obj.r, 0, Math.PI*2, true);
+            ctx.fillStyle = "red";
+            ctx.fill();
+            ctx.closePath()
+        }
+
+        function drawimg(obj){
+            ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
+            ctx.beginPath();
+            var bark = new Image(); 
+            bark.src=obj.src;
+            bark.onload=function(){                
+                 ctx.drawImage(bark, obj.x, obj.y, obj.width, obj.height);
+             }   
+            ctx.closePath();
+        }
+
+    </script>
+</body>
+</html>

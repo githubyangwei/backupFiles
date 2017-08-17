@@ -1,0 +1,112 @@
+*{margin:0;padding:0;}
+body{font-family: '微软雅黑';font-size: 16px}
+li{list-style: none}
+a{text-decoration: none}
+.absolute{position: absolute;}
+.relative{position: relative;}
+.fixed{position: fixed;}
+.overflow{overflow: hidden}
+.left{float:left}
+.right{float: right}
+.inlineblock{display: inline-block;}
+/*common*/
+
+/*range*/
+.wrap{height: 100%;height: 100%; }
+.range{width:91%;left:4.5%;background: rgba(0,0,0,0.5);top:46.7%;}
+.range li{padding: 4% 0;left:0;}
+/*.champion{width:100%;height: 100%;}*/
+.pic{width:82%;border-radius: 100%}
+.banner{width: 16%;color: white;padding:0 1%;z-index: 0}
+.digital{font-size: 1.3em;font-style: italic;}
+.touxiang{border-radius: 100%;vertical-align: middle;margin-left: 1%;}
+.name{margin-left: 3%;color: white;margin-top: 1em;}
+.heart{height: 1em;margin-top: 1.1em}
+.count{margin-top: 1em;margin-left: 0.5em;margin-right: 0.7em;color: white}
+
+/*zhuye*/
+.top_footer{padding: 2.4%;background: rgba(255,255,255,0.2)}
+.cancel{color: white;padding:2% 3%;right:2%;top:5%;
+	border-radius: 5px;background: rgba(0,0,0,0.5);display:none;}
+.zhuye_heart{height: 1.2em;padding: 1% 0}
+.counts{color: white;margin-left: 2%;padding: 1% 0}
+.title{top:0;text-align: center;z-index: 0;width: 30%;left:35%;color: white;padding: 3.4% 0}
+.focus{background: #ffce39;color:white;text-align: center;padding:1.5% 2.5%;border-radius: 5px;letter-spacing: 0.2em}
+.main{padding: 2.4% 0 0;}
+.main>img{width: 46.4%;margin:0 0 2.4% 2.4%;border-radius: 7%;}
+
+/*xiangce*/
+/*.outside{height: 100%;width: 100%;overflow-x:auto }*/
+.total_wrap{left:0;top:0;}
+.total_wrap{height: 100%;-webkit-transition:all 0.5s ease-in-out;-webkit-transform-origin:right;}
+.try{-webkit-transform:scale(0.6);-webkit-transform-origin:left;}
+/*.try_last{-webkit-transform:scale(0.6);-webkit-transform-origin:right}*/
+.xiangce_bac{width: 100%;height: 100%;-webkit-filter: blur(5px);}
+.xiangce_wrap{height: 95%;background: rgba(255,255,255,0.3);border-radius: 15px;-webkit-transition:all 0.5s ease-in-out;}
+.tags{-webkit-transition:all 0.5s ease-in-out;background-color: rgba(0,0,0,0.6);text-align: center;color: white;padding: 1% 2%;font-size: 0.9em}
+.star_name{padding: 2% 0;text-align: center;color: white;font-size: 1.2em；-webkit-transition:all 0.5s ease-in-out;}
+.photo{width: 100%;height:83%;vertical-align: top;}
+.xiangce_footer{padding: 3.3% 0;}
+.xiangce_footer_center{width: 16%;margin: 0 auto}
+.xiangce_footer_center_heart{display: block;width: 58%;margin:0 auto;-webkit-transition:all 0.5s ease-in-out;}
+.zan{text-align: center;color: white;-webkit-transition:all 0.5s ease-in-out;}
+
+/*mystar*/
+.up_wrap{height: 100%;}
+.down_wrap{height: 10%;padding: 3% 0}
+.bottom{/*height: 10%;bottom: -10%;*/left:0;height: 100%;}
+.star{border-radius: 100%;margin: 2% 5%;-webkit-transition:all 0.2s ease;padding: 0.5% 0}
+.wrap_circle{height: 100%}
+.circle{border-radius: 100%;border:2px solid yellow;bottom:0;}
+.alt{width:100%;bottom: 0;-webkit-animation:'alt' 2s ease-in-out infinite;}
+
+/*upload*/
+.upload_wrap{width: 90%;height: 95%;left:5%;top:2.5%;background: rgba(255,255,255,0.3);border-radius: 15px;}
+.complete{width:80%;text-align: center;color:#778899;
+	left:10%;top:61%;background: yellow;padding: 3% 0;border-radius: 10px}
+.add{width:90%;left:5%;top:40%;padding: 3% 0;background-color: rgba(0,0,0,0.5);color:white;text-align: center;letter-spacing: 0.1em;
+	border-radius: 5px}
+.write{height: 100%;width: 90%;background:#9e9e9e;left:0;top:-110%;padding: 5%;
+		-webkit-transition:all 0.5s ease-in-out;}
+.write_down{top:0;}
+.write_wrap{padding: 2%;width: 97%;background: rgba(255,255,255,0.5);border-radius: 5px}
+.content{background: rgba(0,0,0,0.5);font-family: '黑体';border:none;outline: none;padding:2% 5%;
+		width: 55%;border-radius: 5px;font-size: 1em;color:white;}
+.comfirm{border:0;background: #ffce39;
+	;text-align: center;width: 32%;color: white;padding: 1.5% 0;font-family: '黑体';font-size: 1em;border-radius: 5px;
+		margin-top: 0.5%;margin-left: 2%;outline: 0}
+@-webkit-keyframes 'alt'
+{
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+
+@media screen and (min-width: 321px) and (max-width: 470px)
+{
+	body,html{font-size: 18px}
+}
+@media screen and (min-width: 471px) and (max-width:539px)
+{
+	body,html{font-size: 24px}
+}
+@media screen and (min-width: 540px) and (max-width: 719px)
+{
+	body,html{font-size:30px}
+}
+@media screen and (min-width: 720px) and (max-width: 1079px)
+{
+	body,html{font-size: 38px}
+}
+@media screen and (min-width: 1080px)
+{
+	body,html{font-size:42px}
+}

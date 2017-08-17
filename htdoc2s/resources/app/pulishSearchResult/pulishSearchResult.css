@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-09-26 15:46:01
+ * @version $Id$
+ */
+.mui-bar .mui-btn-link{
+	font-size: 20px;
+}
+.searchBox{
+	margin-top: 44px;
+}
+.searchText{
+	font-size: 12px;
+	text-align: center;
+	color: #575757;
+	height: 30px;
+	line-height: 30px;
+}
+.searchResult ul{
+    margin: 0px;
+    padding: 0px;
+}
+.searchResult ul li{
+	list-style: none;
+	background:#fff;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+	overflow: hidden;
+	padding:10px 0;
+	margin-bottom: 10px;
+}
+.pulishTopPic{
+	padding:8px;
+	box-shadow: 0 1px 6px #ccc;
+	border-radius: 5px
+}
+.pulishTopPic img{
+	max-width: 120px;
+}
+.mui-table-view-cell:after{
+	background: none;
+	height: 0;
+}
+.pulishTopBtnBox{
+	overflow: hidden;
+}
+.mui-media-body{
+	font-size: 14px;
+	margin-left:150px;
+	color: #292637;
+}
+.pulishSubtitle{
+	margin-top: 5px;
+	font-size: 12px;
+	color: #575757;
+	position: relative;
+}
+.pulishSubtitleMail span{
+    font-size: 14px;
+}
+.pulishSubtitleMail span:last-child{
+	margin-left: 10px;
+}
+.searchResult{
+	margin-bottom: 60px;
+}

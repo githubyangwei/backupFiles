@@ -1,0 +1,48 @@
+*{margin: 0;padding: 0;word-break:break-all; /*支持IE，chrome，FF不支持*/word-wrap:break-word;/*支持IE，chrome，FF*/}
+input{
+ -webkit-appearance:none;
+ outline:none
+
+}   
+
+html,body{width: 100%;height: 100%;background-color: #e1e1e1;}
+.title{width: 100%;height: 40px;background-color: #4BBEB0;text-align: center;color: white;}
+#back{position: absolute;top: 11px;left: 23px;display: none;
+-webkit-transition: all 0.3s ease-in;
+-moz-transition: all 0.3s ease-in;
+-ms-transition: all 0.3s ease-in;
+-o-transition: all 0.3s ease-in;
+transition: all 0.3s ease-in;
+}
+.title>div{display: inline-block;line-height: 40px;font-size: 20px;}
+
+.content{width: 100%;position: relative;overflow: hidden;height: 400px;}
+.warp{position: absolute;top: 0px;left:0%;width: 200%;height: 400px;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+.list,.mobile{position: absolute;width: 50%;}
+.mobile{top: 0;left: 50%;height: 400px;z-index: 1;  }
+.list{top: 0px;left: 0px;height: 400px;}
+.list>div{position: relative; background-color: white;height: 40px;width: 97%;margin: 0 auto;margin-top: 10px; border: 1px solid #CCC;border-radius: 3px;}
+.list>div>img{width: 25px;margin: 7.5px 10px 0 10px;}
+.list>div>span{display: inline-block; line-height: 40px;position: relative;top: -6px;}
+.list>.count{height: 60px;width: 100%;margin-top: 10px; border: none;border-radius: 0px;}
+.countfoot{background-image: url(../img/smallbg.jpg);width: 100%;height: 9px;position: absolute;bottom: -2px;}
+.count>p{font-size: 14px;line-height: 28px;margin-left: 10px;}
+
+.mobile>div{line-height: 30px;margin: 10px 0;}
+.mobile>div>p{font-size: 16px;margin-left: 10px;}
+.mobile>div>input{border: 1px solid #e1e1e1; border-radius:0px;font-size: 16px;line-height: 32px\9;height: 32px;width: 100%;padding-left: 10px;}
+.submit{text-align: center;margin-top: 20px;}
+.mobile>.submit>input{margin-top: 50px; width: 98%;background-color: #4BBEB0;border-radius: 16px;letter-spacing: 10px;font-weight: bold;color: white;}
+
+.loading{position: absolute;top: 50%;left: 50%;opacity: 0;z-index: -5;width: 30px;height: 30px;}
+.loading>img{position: relative;left: -50%;top: -50%;width: 30px;}
+
+.footer{position: absolute;bottom: 10px;left: 0;text-align: center;width: 100%;color: #555;}
+.footer>p{font-size: 14px;line-height: 20px;}

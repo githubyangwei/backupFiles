@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-09-26 15:46:01
+ * @version $Id$
+ */
+.hearder{
+	background: #f17f34;
+	overflow: hidden;
+	padding-bottom: 10px;
+	box-shadow: 0 1px 6px #ccc;
+}
+.headerTop{
+	height: 44px;
+}
+.headerTop .mui-pull-left,.headerTop .mui-pull-right{
+	padding:10px;
+}
+.headerTop .mui-pull-right{
+    font-size: 15px;
+}
+.headerBox{
+	padding:8px 5px 3px 5px;
+}
+.headerBox a{
+    color: #fff!important;
+}
+.headerBoxName{
+	font-size: 14px;
+}
+.headerBox .mui-pull-left,.headerBox .mui-pull-right{
+	text-align: center;
+	margin-top: 25px;
+}
+.headerBoxTb{
+	font-size: 30px;
+}
+.memberBox{
+	margin:0 66px;
+}
+.memberPic{
+	width: 80px;
+	height: 80px;
+	margin:0 auto;
+}
+.memberPic img{
+	max-width: 80px;
+	border-radius: 30px;
+}
+.memberName{
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 5px;
+}
+.muiGIft{
+	font-size: 18px!important;
+	margin-right: 5px;
+}
+.content{
+	margin-top:10px;
+}
+.contentBox{
+	position: relative;
+}
+.contentBox .mui-navigate-right{
+	margin-left:40px;
+	font-size: 14px;
+}
+.contentLeft{
+	position: absolute;
+	left:15px;
+	top:5px;
+	width: 30px;
+	height: 30px;
+}
+.contentLeft img{
+	max-width: 30px;
+}
+.contentRight{
+	position: absolute;
+	right:35px;
+	top:11px;
+	font-size: 12px;
+	color: #7f8187;
+	max-width: 170px;
+}
+.user{
+	margin-top: 10px;
+	font-size: 14px;
+}
+.userBox{
+	position: relative;
+}
+.userLeft{
+	position: absolute;
+	left:15px;
+	top:5px;
+	width: 30px;
+	height: 30px;
+}
+.userLeft img{
+	max-width: 30px;
+}
+.userRight{
+	position: absolute;
+	right:35px;
+	top:11px;
+	font-size: 12px;
+	color: #7f8187;
+}
+.userBox .mui-navigate-right{
+    margin-left: 40px;
+}
+.mui-table-view-cell:after{
+	left:50px;
+}.bottomTop{
+	margin-bottom: 60px;
+}

@@ -1,0 +1,67 @@
+@charset "utf-8";
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;font-family: '微软雅黑';font-weight: normal;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+html,body{width: 100%;height: 100%;}
+a{text-decoration: none;}li{list-style: none;}
+a img{border:none;}
+/*内容*/
+.m-content{width: 1000px;margin: 0 auto;}
+/*通用标题*/
+.red{color: #D81300!important;}
+.clear{clear: both;}
+.m-title{height: 56px;background: transparent url(../img/titlebg.jpg) 0 0 no-repeat;}
+.m-title p{margin: 0 0 0 25px; padding: 0 50px 0 0;font-size: 24px;height: 56px;line-height: 56px;color: #900b00;display: inline;background: #FDBE9F;}
+.m-title p span{font-size: 18px;}
+/*第一部分*/
+.m-cont-one{height: 340px;position: relative;}
+.m-cont-one .m-one-right{width: 387px;height: 325px;position: absolute;right: 5px;top: 0px;}
+.m-cont-one .m-one-right .m-one-title {height: 45px;border-bottom:3px solid #D81300;position: relative;margin: 0 10px 0 0}
+.m-cont-one .m-one-right .m-one-title span{position: absolute;left:20px;color: #D81300;font-size: 24px;border-bottom:3px solid #ccc;line-height: 45px;display: block;padding:0 8px;}
+.m-cont-one .m-one-right .m-main{height: 110px;padding: 17px 10px;}
+.m-cont-one .m-one-right .m-main h2{font-size: 18px;line-height: 30px;}
+.m-cont-one .m-one-right .m-main a{color: #000;}
+.m-cont-one .m-one-right .m-main a:hover{color: #D30915;}
+.m-cont-one .m-one-right .m-main p{font-size: 12px;line-height: 24px;color: #8d8e8e;margin: 12px 10px;}
+.m-cont-one .m-one-right .m-main p a{color: #8d8e8e;}
+.m-cont-one .m-one-right .m-main ul{height: 120px;}
+.m-cont-one .m-one-right .m-main ul li{height: 30px;line-height: 30px;font-size: 14px;}
+.m-cont-one .m-one-left{width:600px;height: 314px;top: 15px;left: 0; position: absolute;}
+
+/*轮播图*/
+div.slideBox{ position:relative; width:670px; height:300px; overflow:hidden;}
+div.slideBox ul.items{ position:absolute; float:left; background:none; list-style:none; padding:0px; margin:0px;}
+div.slideBox ul.items li{ float:left; background:none; list-style:none; padding:0px; margin:0px;}
+div.slideBox ul.items li a{ float:left; line-height:normal !important; padding:0px !important; border:none/*For IE.ADD.JENA.201206300844*/;}
+div.slideBox ul.items li a img{ margin:0px !important; padding:0px !important; display:block; border:none/*For IE.ADD.JENA.201206300844*/;}
+div.slideBox div.tips{ position:absolute; bottom:0px; width:100%; height:39px; background:#2B2B2B;}
+div.slideBox div.tips div.title{ position:absolute; left:0px; top:0px; height:100%;width: 100%;}
+div.slideBox div.tips div.title a{ color:#FFF; font-size:14px; line-height:39px; margin-left:10px; text-decoration:none;width:100%;text-align: left;display: block;}
+div.slideBox div.tips div.nums{ position:absolute; right:0px; top:0; height:100%;}
+div.slideBox div.tips div.nums a{ display:inline-block; >float:left/*For IE.ADD.JENA.201206300844*/; width:10px; height:10px;font-size: 1px; background-color:#FFF; text-indent:-99999px; margin:15px 10px 0px 0px;}
+div.slideBox div.tips div.nums a.active{ background-color:#2499FF;;}
+
+/*第三部分*/
+.m-cont-three .m-t-img{margin: 20px 0}
+/*第二部分*/
+.m-cont-two{height: 365px;margin-top: 10px;}
+.m-cont-two ul{width: 100%;margin-top: 15px;height: 295px;}
+.m-cont-two ul li{float: left;margin: 0 6px;width: 236px;height: 295px;}
+.m-cont-two ul li a{color: #5A5959;font-size: 14px;}
+.m-cont-two ul li a:hover{color: #1B1767}
+
+/*第四部分*/
+.m-cont-four .m-a-list{height: 255px;position: relative;}
+.m-cont-four .m-a-list .m-t-left{position: absolute;top: 10px;right: 50px;width: 23px;height: 19px}
+.m-cont-four .m-a-list .m-t-right{position: absolute;top: 10px;right: 24px;width: 23px;height: 19px}
+.m-cont-four .m-a-list .m-show{position: absolute;top: 35px;left: 0;width: 1000px;height: 190px;overflow: hidden;}
+.m-cont-four .m-a-list .m-show .m-control{position: absolute;width: 9999px;height: 190px;}
+.m-cont-four .m-a-list .m-show .m-control ul{width: 1000px;height: 190px;float: left;}
+.m-cont-four .m-a-list .m-show .m-control ul li{float: left;width: 235px;height: 173px;margin: 0 7px 22px 8px;_margin: 0 6px 22px 7px; text-align: center;position: relative;}
+.m-cont-four .m-a-list .m-show .m-control ul li img{width: 235px;height: 173px;}
+.m-cont-four .m-a-list .m-show .m-control ul li p{position: absolute;bottom: -50px;left: 0;width: 100%;font-size: 14px;line-height: 25px;height: 25px;background: #2B2B2B;opacity: 0.8;filter:  alpha(opacity=80); zoom: 1; color: white}
+.m-cont-four .m-a-list .m-show .m-control ul li a{display: block;width: 100%;height: 100%;}
+.m-cont-four .m-a-list .m-show .m-control ul li a:hover p{bottom: 0px;}
+/*第五部分*/
+.m-cont-five .m-five{margin-top: 15px;position: relative;height: 340px;border-bottom: 3px solid #D5D5D5;}
+.m-cont-five .m-five .m-f-left{position: absolute;width: 459px;height: 310px;top: 0px;right: 25px;}
+.m-cont-five .m-five .m-f-left p{font-size: 14px;line-height: 26px;text-indent: 2em;}

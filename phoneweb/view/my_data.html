@@ -1,0 +1,122 @@
+﻿<!doctype html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>基本信息</title> 
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta name="description" content="基本信息" /> 
+<meta content=”telephone=no,email=no” name=”format-detection” /> 
+<meta name="Keywords" content="基本信息"> 
+<meta name="apple-mobile-web-app-title" content="基本信息界面 "> 
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<style type="text/css">
+.m-data-title{text-align: center;height: 140px;background-color: #EBEBEB;text-align: center;padding-top: 20px;}
+.m-data-title div{display: inline-block;padding: 4px;margin-bottom: 10px;border: 1px dashed  #B4B4B4;border-radius: 50px;}
+.m-data-title img{width: 90px;height: 90px;border-radius: 50px;margin: -1px}
+.m-data-more{margin: 0 14px;background-color: white;}
+.m-data-more table{width: 100%;border-collapse: collapse;;}
+.m-data-more table tr{border-bottom:1px solid #E2E4F2}
+.m-data-more table tr:nth-last-child(2),.m-data-more table tr:nth-last-child(1){border-bottom:1px solid #fff}
+.m-data-more table tr>td:nth-of-type(1){width: 90px;padding-left: 10px;}
+.m-data-more table td{font-size: 16px;height: 45px; line-height: 45px;}
+.m-data-more table td>input[type='text'],.m-data-more table td>input[type='date']{width: 95%;background-color: #EBEBEB;border: none;border-radius: 0px;font-size: 16px;height: 30px;line-height: 30px}
+.m-data-more table td>input[type='submit']{width: 100%;border-radius: 3px;border: 1px solid #5677FC;background-color: #5677FC;color: white;font-size: 16px;line-height: 40px;letter-spacing: 5px;margin-bottom: 20px}
+.m-data-more .m-data-sex>span{margin-right: 30px;}
+.m-data-more .m-data-sex>input{margin-right: 10px;}
+.m-data-more table td>textarea{width: 95%;height: 100px;background-color: #EBEBEB;border:1px solid #EBEBEB;margin: 10px 0;resize:none; }
+.m-up-control{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.6);z-index: 33;display: none;}
+.m-up-control>div{position: absolute;top: 25%;left: 2%;width: 96%;height: 90px;background-color: white;text-align: center;padding-top: 40px;}
+.m-up-control>div>div{display: inline-block;width: 120px;height: 50px;margin:0 11px; line-height: 50px; font-size: 18px;color: white;background-color:#5677FC;border-radius: 5px;position: relative;}
+.m-up-control>div>div>input{width: 100%;height: 100%;position:absolute;top: 0;left: 0;opacity: 0;}
+</style>
+<script type="text/javascript">
+    function previewImage(file){
+        var img = document.getElementById('up_pic');
+        var reader = new FileReader();
+        reader.onload = function(evt){img.src = evt.target.result;}
+        reader.readAsDataURL(file.files[0]);
+        $(".m-up-control").hide();
+    }
+</script>
+</head> 
+<body> 
+<div class="m-banner"></div>
+<div class="m-header">
+    <span>基本信息</span>
+    <span onclick='history.go(-1);' class="m-h-left"></span>
+</div>
+<!-- 弹出层 -->
+<form action="">
+<div class="m-up-control">
+    <div>
+        <div id='album'><span>选取照片</span><input type="file" onchange="previewImage(this)"></div>
+    </div>
+</div>
+
+<div class="m-data-title">
+    <div id="camera"><img src="../img/up_pic.png" id="up_pic" alt=""></div>	
+</div>
+<div class="m-data-more">
+    <form action="#">
+        <table>
+            <tbody>
+                <tr>
+                    <td>昵称</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>性别</td>
+                    <td class='m-data-sex'>
+                        <input type="radio" name='data-sex'><span>男</span>
+                        <input type="radio" name='data-sex'><span>女</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>手机号</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>生日</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>单位名称</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>个人简介</td>
+                    <td><textarea name=""></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan='2'><input type="submit" vlaue='保存'></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+</form>
+
+</body> 
+<script type="text/javascript" src='../js/jquery-1.8.3.min.js'></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $("#camera").on('click', function(event) {
+            event.preventDefault();
+            $(".m-up-control").show();
+        });
+        $(".m-up-control").click(function(event) {
+           $(".m-up-control").hide();
+        });
+        $("#album").click(function(event) {
+            event.stopPropagation()
+            console.log("x")
+        });
+        // $("#photo").click(function(event) {
+        //     event.stopPropagation()
+        //     console.log("sss")
+        // });
+    });
+</script>
+</html>

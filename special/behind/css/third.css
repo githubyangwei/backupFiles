@@ -1,0 +1,20 @@
+html body{background: #F7F3E9}
+/*主体部分*/
+.m-content{width: 1000px;margin: 0 auto;padding: 20px 0 0 0}
+/*标题*/
+.m-content .m-title{height: 50px;line-height: 50px;font-size: 18px;color: black;background: #DFCFB4;text-indent: 2em;}
+.m-content .m-title span{margin: 0 2px}
+/*内容*/
+.m-content .m-cont{padding: 35px 0;text-align: center;}
+.m-content .m-cont h2{font-size: 24px;}
+.m-content .m-cont h3{font-size: 14px;padding:30px 0 20px;border-bottom: 1px solid #D7C8AE;margin: 0 0 30px 0}
+.m-content .m-cont h3 span{margin: 0 30px;}
+.m-content .m-cont img{max-width: 100%;}
+.m-content .m-cont img,.m-content .m-cont p{margin: 20px 0;font-size: 14px;}
+/*底部*/
+.m-foot{position: relative;height: 140px}
+.m-foot div{position: relative;z-index: 1;margin: 0 auto;padding-top: 30px;width: 1000px;border-top: 4px solid #E9DECB}
+.m-foot div p{text-align: center;font-size: 14px;line-height: 20px}
+.m-foot div p span{margin: 0 15px}
+.m-foot img{position: absolute;bottom: 0;right: 0;z-index: 0}
+

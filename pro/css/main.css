@@ -1,0 +1,572 @@
+*{   
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	list-style: none;
+}
+input[type=button]{-webkit-appearance:none;outline:none;}
+html,body{
+	width: 100%;
+	height: 100%;
+  overflow: hidden;
+}
+.all{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#page1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10
+}
+#page2,#page3,#page4,#page5,#page6,#page7{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+}
+
+
+
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	width: 100%;
+	height: 30px;
+	background-color: black;
+	overflow: hidden;
+  z-index: 20;
+}
+.bottom_nav{
+    width: 100%;
+     display:inline-block;  /* Firefox */ 
+     display:-moz-box;
+     -moz-box-orient:horizontal; /* Safari, Opera, and Chrome */ 
+     display:-webkit-box;
+     -webkit-box-orient:horizontal; /* W3C */ 
+     display:box;
+     box-orient:horizontal;
+     line-height: 30px;
+     position: fixed;
+     left: 0;
+     z-index: 8;
+ }
+ .left_cas{
+ 	margin-left: 3px;
+ }
+.bottom_nav_li{
+     height: 30px;
+     -webkit-box-flex: 1.0;
+     -moz-box-flex:1.0;
+      box-flex:1.0;
+      text-align: center;
+      line-height: 30px;
+      font-size: 14px;
+      position: relative;
+      background-color: #0B2633;
+      color: white;
+ }
+ .shadow{
+    box-shadow: 2px 2px 10px #1D587E,2px -2px 10px #1D587E,-2px 2px 10px #1D587E,-2px -2px 10px #1D587E;
+ }
+ /*/*首页 page1*/
+ .content{
+    background-image: url(../img/bg1.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .content>img{
+    margin-top: 16%;
+    height: 74.5%;
+    width: auto;
+  }
+  .title,.phone{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    text-align: center;
+  }
+  .title{
+    top: 9%;
+    left: 0;
+  }
+  .phone{
+    top: 31%;
+    left: -3%;
+  }
+  .txtbtn{
+    position: absolute;
+    width: 100%;
+    height: 16%;
+    bottom: 60px;
+  }
+  .txt{
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .btn_1{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .btn_1>input{
+    background-color: #000E19;
+    opacity: 0.8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 26px;
+    border-radius: 5px;
+  }
+
+  /*活动规则1 page2*/
+    .bg{
+    background-image: url(../img/bg1.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .bg>img{
+    margin-top: 16%;
+    height: 74.5%;
+    width: auto;
+
+  }
+
+/*活动规则2 page3*/
+  .bg2{
+    background-image: url(../img/bg2.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .bg2>img{
+    margin-top: 16%;
+    height: 69%;
+    width: auto;
+    margin-bottom: 4.5%;
+  }
+  .ex_btn{
+    width: 100%;
+    height: auto;
+  }
+  .ex_btn>input{
+    background-color: #000E19;
+    opacity: 0.8;
+    color: white;
+    border: none;
+    padding: 6px 19px 6px 27px;
+    font-size: 21px;
+    letter-spacing: 8px;
+    border-radius: 5px;
+  }
+/*已邀请过 page4*/
+  .content_yq{
+    background-image: url(../img/bg1.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .content_yq>img{
+    margin-top: 16%;
+    height: 74.5%;
+    width: auto;
+  }
+  .titles{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 14%
+  }
+  .title_t{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background-image: url(../img/jt_title.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: left;
+    text-indent: 7px;
+    line-height: 40px;
+  }
+  .people{
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    position: relative;
+    margin-top: 15px;
+    background-color: #002230;
+    padding-top: 15px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 3px 20px black;
+    border-radius: 5px;
+  }
+  .people>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .people>span{
+    position: relative;
+    top: -15px;
+  }
+  .name{
+    margin-right: 18px;
+  }
+  .money{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00607A;
+    color: #33FDFF;
+    border-radius: 5px;
+  }
+  .suc_btn{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 23%;
+    left: 0;
+  }
+  .suc_btn>input{
+    background-color: #000E19;
+    opacity: 0.8;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 3px;
+  }
+  .frd{
+    position: relative;
+    top: 17%;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .frdtitle{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .frdcontent{
+    width: 80%;
+    padding: 10px 0 20px 0;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgba(0,73,94,0.8);
+  }
+  .frdp{
+    width: 90%;
+    height: 40px;
+    background-color: rgba(0,85,109,1);
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    opacity: 0.8
+  }
+  .frdp>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+  }
+  .frdp>span{
+    position: relative;
+    top: -16px;
+    color: white;
+    font-size: 12px;
+  }
+  .piny{
+    padding: 10px 25px;
+    background-color: #013E51;
+    margin: 0 4px; 
+    border-radius: 2px;   
+  }
+  .addm{
+    background-color: #013E51;
+    padding: 10px ;
+    border-radius: 2px;
+  }
+  .checkall{
+    width: 100%;
+  }
+  .checkall>input{
+    background-color: #000E19;
+    opacity: 0.8;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 3px;
+  }
+  .gz{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 5px;
+    left: 31px;
+  }
+/*初次进入 page5*/
+  .content_noyq{
+    background-image: url(../img/bg1.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .content_noyq>img{
+    margin-top: 16%;
+    height: 74.5%;
+    width: auto;
+  }
+
+  .title_t{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background-image: url(../img/jt_title.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: left;
+    text-indent: 7px;
+    line-height: 40px;
+  }
+  .people{
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    position: relative;
+    margin-top: 15px;
+    background-color: #002230;
+    padding-top: 15px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 3px 20px black;
+    border-radius: 5px;
+  }
+  .people>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .people>span{
+    position: relative;
+    top: -15px;
+  }
+  .name{
+    margin-right: 18px;
+  }
+  .money{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00607A;
+    color: #33FDFF;
+    border-radius: 5px;
+  }
+  .suc_btn>div{
+    width: 100%;
+    padding: 5px 0 10px 0;
+    color: white;
+    font-size: 13px;
+  }
+  .suc_btn>input{
+    background-color: #000E19;
+    opacity: 0.8;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  .frd{
+    position: relative;
+    top: 17%;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .frdtitle{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .frdcontent{
+    width: 80%;
+    padding: 26px 10px; 
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgb(0,73,94);
+    opacity: 0.8;
+  }
+  .msg{
+    background-color: #00607A;
+    width: 90%;
+    height: 40px;
+    border-radius: 2px;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+  }
+  .msg>img{
+    width: 35px;
+    height: 35px;
+  }
+  .msg>span{
+    position: relative;
+    top: -10px;
+    font-style: italic;
+  }
+
+/*兑换奖品  page6*/
+.content_dh{
+    background-image: url(../img/bg3.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .content_dh>img{
+    margin-top: 16%;
+    height: 74.5%;
+    width: auto;
+  }
+  .suc{
+    width: 85%;
+    margin: 0 auto;
+    background-color: #00526B;
+    opacity: 0.8;
+    position: relative;
+    top: 20%;
+    height: 40%;
+    border-radius: 5px; 
+  }
+  .suc_img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 5%;
+  }
+  .suc_txt{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+  }
+  .tips{
+    width: 100%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+  }
+  .ts{
+    top: 17%;
+  }
+  /*<!-- 老虎机 page7 -->*/
+
+  .content_lhj{
+    background-image: url(../img/bg1.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .content_lhj>img{
+    margin-top: 16%;
+    height: 74.5%;
+    width: auto;
+  }
+  .lhj_title{
+    width: 100%;
+    position: absolute;
+    top: 8%;
+    text-align:center;
+  }
+  .lhjcontent{
+    width: 100%;
+    position: absolute;
+    top: 28%;
+    text-align: center;
+  }
+  .lhjcontent>img{
+    width: 300px;
+    height: 100px;
+  }
+  .num_box{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+  }
+  .num{
+    float: left;
+    background:url(../img/num.png) top center repeat-y;
+    width: 70px;
+    height: 80px;
+  }
+  .btn{
+    position: absolute;
+    top:55%;
+    left: 0;
+    width: 100%;
+    height: 48%;
+  }
+  .btns{
+    background-image: url(../img/turn.png);
+    width: 55%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+@media screen and (max-width:600px) {
+      
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+
+}
+
+
+@media screen and (min-width:900px) {
+
+}*/

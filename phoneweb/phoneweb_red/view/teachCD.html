@@ -1,0 +1,111 @@
+﻿<!doctype html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>导师详细</title> 
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta name="description" content="导师详细" /> 
+<meta content=”telephone=no,email=no” name=”format-detection” /> 
+<meta name="Keywords" content="导师详细"> 
+<meta name="apple-mobile-web-app-title" content="导师详细界面 "> 
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/menu.css">
+<style type="text/css">
+.m-t-cont{margin: 10px;border: 1px solid #EBEBEB}
+.m-t-cont input,.m-t-cont select{width: 100%;height: 26px; border: none;background: #EBEBEB;text-indent: 5px;line-height: 26px;}
+.m-t-cont select{position: relative;top: -4px;}
+.m-t-cont .m-name .m-name-img img{width: 80px;height: 80px;border-radius: 5px;}
+.m-t-cont .m-t-mas{width: 100%;border-collapse: collapse;border-color: #fff;border-width: 0px;margin: 5px 0 0 0;}
+.m-t-cont .m-t-mas td{border-bottom: 1px solid #EBEBEB;font-size: 14px;line-height: 30px;}
+.m-t-cont .m-t-mas td:nth-child(1){width: 100px;text-align: center;vertical-align: top;text-align: left;padding-left: 10px;}
+.m-t-cont .m-t-mas td:nth-child(2){padding:0 10px 0 0}
+.m-person{margin: 0 0 5px 0;padding:0 10px;}
+.m-person p{font-size: 14px;line-height: 40px;}
+.m-person textarea{width: 96%;font-size: 14px;line-height: 26px;border: none;background: #EBEBEB;padding:0 2% 20px;resize:none;height: 200px;}
+.m-d-tips{font-size: 12px;margin-left: -3px;}
+.m-s-tips{margin-left: 43px;font-size: 12px;}
+</style>
+
+</head> 
+<body> 
+<div class="m-banner"></div>
+<div class="m-header">
+    <span>导师详细</span>
+    <span  class="m-h-left-m"></span>
+</div>
+<div class="m-t-cont">
+
+    <table class='m-t-mas' border='1px'>
+        <tr>
+            <td>具体类型</td>
+            <td>
+                <select name="" id="">
+                    <option value="">其他类型</option>
+                    <option value="">类型1</option>
+                    <option value="">类型2</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>具体类型</td>
+            <td><input type="text" value=""/><span class='m-d-tips'>（提示：如法律咨询师，环保咨询师等）</span></td>
+        </tr>
+        <tr>
+            <td>职业/职务</td>
+            <td><input type="text" value=""/><span class='m-d-tips'>（提示：如董事长、教授等）</span></td>
+        </tr>
+        <tr>
+            <td>服务时间</td>
+            <td><input type="text" value=""/><span class='m-d-tips'>（提示：周末或提前预约）</span></td>
+        </tr>
+    </table>
+    <div class="m-person">
+        <p>个人专长<span class='m-s-tips'>（提示：最大长度为250字符）</span></p>
+        <textarea></textarea>
+    </div>
+</div>
+ 
+<div class="m-cover">
+    <div class="m-c-banner">
+        <div class="m-c-b-cont">
+            <div class="m-login">
+                <img src="../img/men.jpg" alt="">
+                <div class="m-u-login">
+                    <a href='register.html'>用户名：<span>西瓜酱</span></a>
+                    <a class='m-u-info' href='user.html'>用户中心</a>
+                </div>
+            </div>
+            <ul class="m-c-list">
+                <li><a href="chazc.html"><img src="../img/icon01.png" alt="">查政策</a></li>
+                <li><a href="#"><img src="../img/icon02.png" alt="">选项目</a></li>
+                <li><a href="#"><img src="../img/icon03.png" alt="">找资金</a></li>
+                <li><a href="#"><img src="../img/icon04.png" alt="">招人才</a></li>
+                <li><a href="#"><img src="../img/icon05.png" alt="">找专家</a></li>
+                <li><a href="#"><img src="../img/icon06.png" alt="">寻孵化</a></li>
+                <li><a href="#"><img src="../img/icon07.png" alt="">看案例</a></li>
+                <li><a href="#"><img src="../img/icon08.png" alt="">找伙伴</a></li>
+            </ul>
+        </div>
+    </div>
+</div> 
+
+</body> 
+<script type="text/javascript" src='../js/jquery-1.8.3.min.js'></script>
+<script type="text/javascript">
+    cover_act();
+
+ function cover_act(){
+    $('.m-h-left-m').click(function(event) {
+        $(".m-cover").animate({'left':'0'},500,'linear',function(){
+            $(".m-cover").css('background', 'rgba(0,0,0,0.6)'); 
+        })
+     });
+     $(".m-cover").click(function(event) {
+         $(".m-cover").css('background', 'transparent'); 
+         $(".m-cover").animate({'left':'-100%'},500,'linear')
+     });
+ }
+</script>
+
+</html>

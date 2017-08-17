@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-09-26 15:46:01
+ * @version $Id$
+ */
+.searchBox{
+	margin-top: 44px;
+}
+.searchText{
+	font-size: 12px;
+	text-align: center;
+	color: #575757;
+	height: 30px;
+	line-height: 30px;
+}
+.centerBottom{
+	padding-bottom: 55px!important;
+}
+.pageSearch{
+	margin:0 3px;
+	overflow: hidden;
+}
+.pageSearch ul{
+	padding:0;
+	margin:0;
+}
+.pageSearch ul li{
+	list-style: none;
+	display: inline-block;
+	width: 50%;
+	float: left;
+}
+.pageSearch ul li a{
+	text-decoration: none;
+	color: none!important;
+}
+.pageSearchBox{
+	margin:3px 3px;
+	background: #fff;
+	box-shadow: 2px 0px 5px #d2d2d2;
+	border-radius: 6px;
+}
+.pageSearchBoxPic{
+	text-align: center;
+	padding:8px;
+}
+.mui-media-object{
+	width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.pageSearchBoxWrap{
+	padding:0px 10px 5px 10px;
+}
+.pageSearchBoxWrapT{
+	padding:5px 10px;
+	border-top:1px solid #ddd;
+}
+.mui-media-body{
+	color: #575757;
+	font-size: 14px;
+}
+.pageSearchBoxSubtitle{
+	color: #615d5d;
+	margin-top:1px;
+	font-size: 12px;
+}
+.pageSearchBoxSubtitle .pageSearchText{
+	color: #575757;
+	margin-right: 5px;
+}
+.pageSearchTb{
+	font-size: 12px;
+}
+.pageSearch .blueColor{
+	color: #034ea0!important;
+}
+.redColor{
+	color: red;
+}

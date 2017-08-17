@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<title>薏米网寻觅牛人,派送红包!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/transform.css">
+	<style type="text/css">
+*{margin: 0;padding: 0;}
+html{width: 100%;height: 100%;}
+body{background-color: #0db9a4;}
+.title{text-align: center;margin: 20px;color: white;}
+.title img{margin-top: 20px;
+	opacity: 1;
+-webkit-animation: bounceIn 1s linear 0s 1;
+-moz-animation: bounceIn 1s linear 0s 1;
+-ms-animation: bounceIn 1s linear 0s 1;
+animation: bounceIn 1s linear 0s 1;
+-webkit-animation-fill-mode: forwards
+}
+.detail{width: 100%;max-width: 960px;margin: 0 auto;}
+.detail li{color:white; font-size: 14px; list-style: none;float: left;width:60px;height: 100px;text-align: center;margin-left: 10px;
+	opacity: 1;
+-webkit-animation: tada2 1s linear 0s 1;
+-moz-animation: tada2 1s linear 0s 1;
+-ms-animation: tada2 1s linear 0s 1;
+animation: tada2 1s linear 0s 1; 
+-webkit-animation-fill-mode: forwards
+}
+.detail li img{width: 100%;}
+.detail li div{width: 100%;}
+.detail li div img{-webkit-animation:tada 1.8s ease-in 0s infinite;
+-moz-animation:tada 1.8s ease-in 0s infinite;
+-ms-animation:tada 1.8s ease-in 0s infinite;
+animation:tada 1.8s ease-in 0s infinite;}
+.detail li div a{color: white;text-decoration: none;}
+.yellow{color: #FBD72F;}
+	</style>
+</head>
+<body>
+	<div class="title">
+		<h3>【薏米团队】</h3>
+		<img src="img/ememed.png"  width="120px" alt="">
+	</div>
+	<!-- ul.detail>li*55>img[src='img/face/$.png']+span{name} -->
+	<ul class="detail">
+		<li><img src="img/face/1.png" alt=""><span>沙兴中</span></li>
+		<li><img src="img/face/usem.png" alt=""><span>行者无疆</span></li>
+		<li><img src="img/face/41.png" alt=""><span>笑傲江湖</span></li>
+		<li><img src="img/face/42.png" alt=""><span>snake</span></li>
+		<li><img src="img/face/37.png" alt=""><span>浅夏.初雨</span></li>
+		<li><img src="img/face/3.png" alt=""><span>yimi梦</span></li>
+		<li><img src="img/face/girl.png" alt=""><span>母老虎</span></li>
+		<li><img src="img/face/4.png" alt=""><span>king</span></li>
+		<li><img src="img/face/5.png" alt=""><span>灰</span></li>
+		<li><img src="img/face/6.png" alt=""><span>aquawood</span></li>
+		<li><img src="img/face/7.png" alt=""><span>玲style</span></li>
+		<li><img src="img/face/46.png" alt=""><span>LOPIN</span></li>
+		<li><img src="img/face/8.png" alt=""><span>fddd</span></li>
+		<li><img src="img/face/11.png" alt=""><span>莫佚铭</span></li>
+		<li><img src="img/face/43.png" alt=""><span>Wenxian</span></li>
+		<li><img src="img/face/44.png" alt=""><span>夜雨</span></li>
+		<li><img src="img/face/30.png" alt=""><span>叶子</span></li>
+		<li><img src="img/face/32.png" alt=""><span>在路上</span></li>
+		<li><img src="img/face/15.png" alt=""><span>蓝色雨点</span></li>
+		<li><img src="img/face/19.png" alt=""><span>Steven</span></li>
+		<li><img src="img/face/20.png" alt=""><span>醉鲤挑灯看剑</span></li>
+		<li><img src="img/face/21.png" alt=""><span>小小</span></li>
+		<li><img src="img/face/49.png" alt=""><span>樱桃小元子</span></li>
+		<li><img src="img/face/33.png" alt=""><span>傻瓜，我美不</span></li>
+		<li><img src="img/face/24.png" alt=""><span>安小七</span></li>
+		<li><img src="img/face/26.png" alt=""><span>请继续   任性</span></li>
+		<li><img src="img/face/35.png" alt=""><span>GtH</span></li>
+		<li><img src="img/face/27.png" alt=""><span>chen-chen</span></li>
+		<li><img src="img/face/28.png" alt=""><span>塔罗</span></li>
+		<li><img src="img/face/29.png" alt=""><span>Rambo</span></li>
+		<li><img src="img/face/48.png" alt=""><span>Yuan</span></li>
+		<li><img src="img/face/45.png" alt=""><span>米欧</span></li>
+		<li><img src="img/face/47.png" alt=""><span>缘来是你</span></li>
+		<li><img src="img/face/40.png" alt=""><span>星星</span></li>
+		<li><img src="img/face/50.png" alt=""><span>哎呦！不错</span></li>
+		<li><img src="img/face/51.png" alt=""><span>Manching</span></li>
+
+
+		<li><div><a href="zhaopins.html"><img src="img/turn.png" alt="" border="0"><span class="yellow">点击加入</span></a></div></li>
+	</ul>
+</body>
+	<script type="text/javascript">
+jQuery(document).ready(function($) {
+	var wid=$('.detail').width();
+	var a=parseInt(wid/$('.detail>li').width()) ;
+	var b=(wid-(a-1)*$('.detail>li').width())/(a);
+	$('.detail>li').css('margin-left', b);
+	// alert(a)
+	// alert(b);
+	setTimeout(function(){
+		$('.detail>li').css('display', 'block');
+		$('.title img').css('display', 'inline-block')
+	}, 30)
+
+});
+	</script>
+</html>

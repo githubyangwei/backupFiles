@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-09-26 15:46:01
+ * @version $Id$
+ */
+/*
+历史记录
+ */
+.history{
+	margin-top: 54px;
+}
+.historyBox{
+	padding:10px;
+}
+.historyWrap{
+	min-height: 25px;
+    overflow: hidden;
+}
+.historyLeftO{
+	width: 80px;
+	border-right:1px solid #c9c9c9;
+	float: left;
+	position: relative;
+	z-index: 1;
+	min-height: 29px;
+	height: 100%;
+}
+.historyLeftO .year{
+	color: #2e2f31;
+	margin-right: 15px;
+	text-align: right;}
+.historyLeftO .year span{
+	font-size: 10px;
+	margin-left: 2px;
+}
+.historyLeftO .time{
+   position: absolute;
+   right:-12px;
+   top:1px;
+   height:25px;
+}
+.historyLeftO .time i{
+	font-size: 24px;
+	color: #43a665;
+	background: #efeff4;
+}
+.historyLeftT{
+	width: 80px;
+	border-right:1px solid #c9c9c9;
+	float: left;
+	position: relative;
+	z-index: 1;
+	min-height: 29px;
+	height: 100%;
+	padding-top: 10px;
+}
+.historyLeftT .year{
+	color: #2e2f31;
+	margin-right: 15px;
+	text-align: right;
+}
+.historyLeftT .year span{
+	font-size: 10px;
+	margin-left: 2px;
+}
+.historyLeftT .historyCircular{
+    position: absolute;
+	right:-6.5px;
+	top:15px;
+	width: 12px;
+	height: 12px;
+	border:1px solid #43a665;
+	border-radius: 6px;
+}
+.historyLeftT .historyCircularS{
+    width: 4px;
+	height: 4px;
+	background: #43a665;
+	border-radius: 2px;
+	margin:3px;
+}
+.historyLeft{
+	width: 80px;
+	border-right:1px solid #c9c9c9;
+	float: left;
+	position: relative;
+	z-index: 1;
+	min-height: 90px;
+	height: 100%;
+}
+.historyLeft .historyCircular{
+	position: absolute;
+	right:-3.5px;
+	top:47px;
+	width: 6px;
+	height: 6px;
+	border:1px solid #43a665;
+	border-radius: 3px;
+	background: #fff;
+}
+.month{
+	text-align: right;
+	font-size: 14px;
+	margin-right: 10px;
+	color: #43a665;
+	line-height: 18px;
+	margin-top: 42px;
+}
+.bottomYear{
+	text-align: right;
+	font-size: 12px;
+	margin-right: 10px;
+	color: #949494;
+	line-height: 14px;
+}
+.historyRight{
+    margin-left: 100px;
+    padding:5px 10px;
+    color:#333; 
+    border-radius:4px;
+    border:1px solid #c9c9c9;
+    position: relative;
+    margin-top: 10px;
+    height: 80px;
+    background: #fff;
+}
+.sharpBox{
+	display:block;
+	position:absolute;
+	left:-12px;
+	top:33px;
+	width:0;
+	height:0;
+	border-style:solid;
+	border-width:6px;
+	border-color:transparent #c9c9c9 transparent transparent;
+}
+.sharp em{
+	display:block;
+	position:absolute;
+	left:-10px;
+	top:33px;
+	width:0;
+	height:0;
+	border-style:solid;
+	border-width:6px;
+	border-color:transparent #fff transparent transparent;
+}
+.bookPageName{
+	color: #6b6c6d;
+	font-size: 12px;
+	line-height: 18px;
+	margin:3px 0;
+}
+.bookPageName .giftTb{
+	font-size: 14px;
+	margin-right: 5px;
+	color: #6b6c6d;
+}
+.sponsorAmount{
+	color: #f34540;
+	font-size: 12px;
+	line-height: 18px;
+	position: relative;
+}
+.sponsorAmount span{
+	font-size: 18px;
+	margin:0 3px;
+}
+.exchangeState{
+	position: absolute;
+	top:0;
+	right:0;
+}
+.orangeColor{
+	color: #f17f34;
+}

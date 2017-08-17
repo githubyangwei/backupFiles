@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-09-26 15:46:01
+ * @version $Id$
+ */
+
+.pulishTop{
+	margin-top: 44px;
+	background: #fff;
+}
+.pulishTop .mui-media{
+    padding: 11px 10px;
+}
+.pulishSubtitle{
+	margin-top: 5px;
+	font-size: 12px;
+	color: #575757;
+}
+.pulishSubtitleMail span{
+    font-size: 14px;
+}
+.pulishSubtitleMail{
+	position: relative;
+}
+.pulishSubtitleMail .sponsorJt{
+	position: absolute;
+	left:0px;
+	top:0;
+}
+.pulishSubtitleMail .sponsorJt span{
+	font-size: 12px!important;
+}
+.pulishSubtitleName{
+	margin-left: 14px;
+}
+.sponsorMoney{
+	text-align: center;
+}
+.tbRedColor{
+	color: #f04444;
+}
+.numRedColor{
+	color: #f04444;
+	font-size: 26px!important;
+	margin-right: 5px;
+}
+.sponsorLast{
+	position: absolute;
+	left: 14px;
+	top:0;
+}
+.sponsorMuseum{
+	margin-left: 74px;	
+}
+.sponsorMuseum p{
+	color: #575757;
+	margin-bottom: 0;
+	font-size: 12px;
+}
+.sponsorMuseum p:last-child{
+	color: #a7a7a7;
+}
+.mui-media-body{
+	font-size: 14px;
+	margin-left:143px;
+	color: #292637;
+}
+.sponsorName{
+	position: relative;
+}
+.sponsorTip{
+	position: absolute;
+	top:1px;
+	left: 0;
+	background: url(img/sponsorBg.png) no-repeat;
+	background-size: 90%; 
+	width: 50.4px;
+	font-size: 12px;
+	height: 21.6px;
+	line-height: 21.6px;
+}
+.sponsorTip span{
+	margin-left: 3px;
+}
+.sponsorIcon{
+	position: absolute;
+	top:0;
+	right:0;
+	font-size: 12px;
+}
+.sponsorIcon span{
+	font-size: 12px;
+	color: #95959d;
+	margin-right: 1px;
+}
+.sponsorIcon span:last-child{
+	margin-left: 3px;
+}
+.sponsorName .sponsorNameText{
+	margin-left:50px;
+}
+.pulishTopPic{
+	padding:8px;
+	box-shadow: 0 1px 6px #ccc;
+	border-radius: 5px
+}
+.pulishTopPic img{
+	max-width: 120px;
+}
+.mui-table-view-cell:after{
+	background: none;
+	height: 0;
+}
+.pulishTopBtnBox{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 5px;
+}
+.btnBox{
+	text-align: center;
+}
+.btnBox .btnBoxW{
+	margin-bottom: 10px;
+	min-width: 102px;
+    max-width: 172px;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    display:inline-block;
+    padding:0 5px;
+    position: relative;
+}
+.btnBoxW span{
+	font-size: 18px!important;
+	margin-right: 3px;
+}
+.btnBoxWLeft{
+	position: absolute;
+	left:-12px;
+	top:0;
+	width: 5px;
+	height: 5px;
+	color: #3ba360;
+}
+.grayBG{
+	background:#f4f4f4;
+	color: #313131;
+}
+.greenBG{
+	background:#3ba360;
+	color: #fff;
+}
+/*
+赞助人简介
+ */
+.sponsor{
+    margin-top: 10px;
+    background: #fff;
+    padding-bottom: 8px;
+}
+.genealogyTitle{
+	height: 30px;
+	border-bottom: 1px solid #eee;
+	font-size: 15px;
+	line-height: 29px;
+	font-weight: bold;
+	position: relative;
+}
+.genealogyTitle span{
+	color: #f34540;
+	margin:0 3px 0 5px;
+	font-weight: normal;
+}
+.genealogyTitle .titleRight{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.genealogyTitle .titleRight span{
+    font-size: 16px;
+    color: #404040;
+}
+.protectionPeople{
+    margin:5px 10px;
+    font-size: 14px;
+}
+.protectionPeople span{
+	font-size: 12px;
+	margin-left: 10px;
+}
+.sponsorjjBox{
+	margin:5px 10px 0 10px;
+	font-size: 12px;
+}
+.sponsorjjBox p{
+	margin-bottom: 0;
+	font-size: 13px;
+	color: #404040;
+	text-indent: 24px;
+}
+.sponsorPic{
+	text-align: center;
+	color: #8E8E8E!important;
+	text-indent: 0!important;
+}
+.sponsorPic img{
+	width: 100%;
+}
+/*
+历史记录
+ */
+.history{
+	margin-top: 10px;
+	background: #fff;
+}
+.historyBox{
+	padding:10px;
+}
+.historyWrap{
+	min-height: 25px;
+    overflow: hidden;
+}
+.historyLeftO{
+	width: 80px;
+	border-right:1px solid #c9c9c9;
+	float: left;
+	position: relative;
+	z-index: 1;
+	min-height: 29px;
+	height: 100%;
+}
+.historyLeftO .year{
+	color: #3bcaff;
+	margin-right: 15px;
+	text-align: right;}
+.historyLeftO .year span{
+	font-size: 10px;
+	margin-left: 2px;
+}
+.historyLeftO .time{
+   position: absolute;
+   right:-12px;
+   top:1px;
+   height:25px;
+}
+.historyLeftO .time i{
+	font-size: 24px;
+	color: #43a665;
+	background: #fff;
+}
+.historyLeftT{
+	width: 80px;
+	border-right:1px solid #c9c9c9;
+	float: left;
+	position: relative;
+	z-index: 1;
+	min-height: 29px;
+	height: 100%;
+	padding-top: 10px;
+}
+.historyLeftT .year{
+	color: #3bcaff;
+	margin-right: 15px;
+	text-align: right;
+}
+.historyLeftT .year span{
+	font-size: 10px;
+	margin-left: 2px;
+}
+.historyLeftT .historyCircular{
+    position: absolute;
+	right:-6.5px;
+	top:15px;
+	width: 12px;
+	height: 12px;
+	border:1px solid #43a665;
+	border-radius: 6px;
+}
+.historyLeftT .historyCircularS{
+    width: 4px;
+	height: 4px;
+	background: #43a665;
+	border-radius: 2px;
+	margin:3px;
+}
+.historyLeft{
+	width: 80px;
+	border-right:1px solid #c9c9c9;
+	float: left;
+	position: relative;
+	z-index: 1;
+	min-height: 59px;
+	height: 100%;
+}
+.historyLeft .historyCircular{
+	position: absolute;
+	right:-3.5px;
+	top:30px;
+	width: 6px;
+	height: 6px;
+	border:1px solid #43a665;
+	border-radius: 3px;
+	background: #fff;
+}
+.month{
+	text-align: right;
+	font-size: 14px;
+	margin-right: 10px;
+	color: #43a665;
+	line-height: 18px;
+	margin-top: 24px;
+}
+.bottomYear{
+	text-align: right;
+	font-size: 12px;
+	margin-right: 10px;
+	color: #949494;
+	line-height: 14px;
+}
+.historyRight{
+    margin-left: 100px;
+    padding:5px 20px;
+    color:#333; 
+    border-radius:4px;
+    border:1px solid #c9c9c9;
+    position: relative;
+    margin-top: 10px;
+    height: 49px;
+}
+.sharpBox{
+	display:block;
+	position:absolute;
+	left:-12px;
+	top:16px;
+	width:0;
+	height:0;
+	border-style:solid;
+	border-width:6px;
+	border-color:transparent #c9c9c9 transparent transparent;
+}
+.sharp em{
+	display:block;
+	position:absolute;
+	left:-10px;
+	top:16px;
+	width:0;
+	height:0;
+	border-style:solid;
+	border-width:6px;
+	border-color:transparent #fff transparent transparent;
+}
+.bookPageName{
+	color: #6b6c6d;
+	font-size: 12px;
+	line-height: 18px;
+}
+.sponsorAmount{
+	color: #2e2f31;
+	font-size: 12px;
+	line-height: 18px;
+}
+.sponsorAmount span{
+	color: #f34540;
+	font-size: 16px;
+	margin:0 3px;
+}

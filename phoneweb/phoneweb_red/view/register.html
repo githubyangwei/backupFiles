@@ -1,0 +1,41 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>注册</title> 
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta name="description" content="注册" /> 
+<meta content=”telephone=no,email=no” name=”format-detection” /> 
+<meta name="Keywords" content="注册"> 
+<meta name="apple-mobile-web-app-title" content="注册界面 "> 
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<style type="text/css">
+.m-info{padding: 18px 0 0 0;}
+.m-info div{background-color: white;border: 1px solid #E2E5F2;height: 50px;line-height: 50px;width: 100%;text-indent: 5px;border-radius: 0px;}
+.m-info div:nth-of-type(2){border-top: 1px solid #fff;border-bottom:1px solid #fff;}
+.m-info div>input{border: 0px;background-color: #fff;width: 100%;font-size: 18px;}
+.m-info .m-i-reg{border-color: #C20E0E;background-color: #C20E0E;border-radius: 5px;margin: 20px 0 18px;color: white;font-size: 18px;text-align: center;letter-spacing: 3px}
+.m-read{text-align: center;color:#9094A8 }
+@media screen and (max-width :325px) {
+    .m-info div>input{font-size: 16px;}
+}
+</style>
+</head> 
+<body> 
+<div class="m-banner"></div>
+<div class="m-header">
+    <span>用户注册</span>
+    <span onclick='history.go(-1);' class="m-h-left-r"></span>
+</div>
+
+<div class="m-info m-center">
+    <div><input type="text" placeholder='请输入您的手机号'></div>
+    <div><input type="text" placeholder='请输入您的用户名'></div>
+    <div><input type="text" placeholder='请输入6-16位字符密码'></div>
+    <div class="m-i-reg">我要注册</div>
+</div>
+<div class="m-read"><span></span>我已阅读并同意</span><span class='c-red'>用户服务协议</div>
+
+</body> 
+</html>

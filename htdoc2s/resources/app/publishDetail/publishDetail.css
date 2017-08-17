@@ -1,0 +1,559 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-09-26 15:46:01
+ * @version $Id$
+ */
+.twoCode{
+	width: 40px;
+	height: 39px;
+	position: absolute;
+	z-index: 0;
+	top:10px;
+	right:0px;
+}
+.twoCode img{
+	width: 100%;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8; 
+	-khtml-opacity: 0.8; 
+	opacity: 0.8;
+}
+.pulishTop{
+	margin-top: 44px;
+	background: #fff;
+}
+.pulishTop .mui-media{
+    padding: 11px 15px;
+    overflow: hidden;
+}
+.pulishSubtitle{
+	margin-top: 5px;
+	font-size: 12px;
+	color: #575757;
+	position: relative;
+}
+.pulishSubtitleMail span{
+    font-size: 14px;
+}
+.pulishSubtitleMail span:last-child{
+	margin-left: 10px;
+}
+.mui-media-body{
+	font-size: 14px;
+	margin-left:150px;
+	color: #292637;
+}
+.pulishTopPic{
+	padding:8px;
+	box-shadow: 0 1px 6px #ccc;
+	border-radius: 5px
+}
+.pulishTopPic img{
+	max-width: 120px;
+}
+.mui-table-view-cell:after{
+	background: none;
+	height: 0;
+}
+.pulishTopBtnBox{
+	overflow: hidden;
+}
+.btnBox{
+	width: 50%;
+    float: left;
+}
+.btnBox .btnBoxW{
+	margin:0 20px;
+	margin-bottom: 10px;
+	min-width: 102px;
+    max-width: 172px;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    display: block;
+    color: #fff;
+}
+.btnBoxW span{
+	font-size: 18px!important;
+	margin-right: 3px;
+}
+.greenBG{
+	background:#02bd8f;
+}
+.redBG{
+	background:#ff6536;
+}
+/*
+底部
+ */
+.muiBarBottom{
+	background: #eee!important;
+	-webkit-box-shadow:none!important;
+	box-shadow:none!important;
+	height:40px;
+}
+.muiBarBottom{
+    /*-webkit-box-shadow: 0 0 1px rgba(229,229,229,1)!important;
+    box-shadow: 0 0 1px rgba(229,229,229,1)!important;*/
+}
+.bottomBox{
+	position: relative;
+}
+.bottomLeft{
+	margin-right: 120px;
+	font-size: 13px;
+	line-height: 39px;
+	margin-left: 5px;
+	border-top:1px solid #e5e5e5;
+	background:#eeeeee;
+}
+.bottomLeft span{
+	margin-right: 3px;
+	font-size: 20px!important;
+}
+.bottomBtn{
+	width: 100px;
+	background: #f17f34;
+	position: absolute;
+	right:0;
+	display: block;
+	height: 41px;
+	color: #fff;
+	line-height: 41px;
+	text-align: center;
+	font-size: 15px;
+}
+/*
+保护发起人
+ */
+.protection,.sponsor,.supporter,.introduce,.recommend{
+    margin-top: 10px;
+    background: #fff;
+    padding-bottom: 8px;
+}
+.genealogyTitle{
+	height: 30px;
+	border-bottom: 1px solid #eee;
+	font-size: 15px;
+	line-height: 29px;
+	font-weight: bold;
+	position: relative;
+}
+.genealogyTitle span{
+	color: #f34540;
+	margin:0 3px 0 5px;
+	font-weight: normal;
+}
+.genealogyTitle .titleRight{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.genealogyTitle .titleRight span{
+    font-size: 16px;
+    color: #404040;
+}
+.number{
+	font-size: 12px;
+	background: #000;
+	color: #fff!important;
+	padding:0 6px;
+	border-radius: 6px;
+}
+.protectionPeople{
+    margin:5px 10px;
+    font-size: 14px;
+}
+.protectionPeople span{
+	font-size: 12px;
+	margin-left: 10px;
+}
+.protectionBox{
+	margin:5px 10px 0 10px;
+	font-size: 12px;
+}
+/*
+赞助人
+ */
+.sponsorBox{
+	overflow: hidden;
+	padding-top: 3px;
+}
+.sponsorBox ul,.supporterBox ul,.recommend ul{
+	padding-left: 0;
+	margin:0;
+}
+.sponsorBox ul li{
+	float: left;
+	margin:5px 5px 0 5px;
+	list-style: none;
+	font-size: 12px;
+	border:1px solid #5e9eca;
+	border-radius: 5px;
+	padding:3px 5px;
+}
+/*
+支持者
+ */
+.supporterBox{
+	margin:0 3px;
+	margin-top: 5px;
+	background: #fff;
+}
+.supporterBox ul{
+	overflow: hidden;
+}
+.supporterBox ul li{
+	list-style: none;
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+.supporterLi{
+	margin:3px;
+	position: relative;
+	min-height: 58px;
+	background: #f2f2f2;
+	border:1px solid #eee;
+}
+.supporterPic{
+	width: 50px;
+	position: absolute;
+	left:0;
+	top:0;
+	padding:3px;
+}
+.supporterLi img{
+	max-width: 50px;
+}
+.supporterRight{
+	margin-left: 58px;
+	font-size: 12px;
+}
+.supporterMail .redColor{
+	margin-left: 3px;
+}
+/*
+家谱介绍
+ */
+.introduceTitle{
+    height: 30px;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+    line-height: 29px;
+    font-weight: bold;
+}
+.introduceTitle span{
+	color: #13d7ca;
+	font-size: 14px;
+	margin-left: 5px;
+}
+.introduceSubtitle{
+	margin:3px 5px;
+	font-size: 12px;
+}
+.bookDetails{
+	margin:0 10px;
+	border-left:3px solid #13d7ca;
+	font-size: 12px;
+}
+.bookDetailsBox{
+	margin-left: 1px;
+	border:1px solid #dcdcdc;
+	border-left:3px solid #dcdcdc;
+	padding:3px;
+}
+.numDetail{
+	width: 49%;
+	display: inline-block;
+}
+/*
+支持信息
+ */
+.supportXX{
+   margin-top:10px;
+}
+.supportXX p{
+	font-size: 12px;
+	text-align: center;
+	margin-bottom:0;
+}
+.supportXXBtn{
+	margin: 0 auto;
+    margin-bottom: 10px;
+    min-width: 102px;
+    max-width: 172px;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    display: block;
+    background: #fff;
+}
+.supportXXBtn span{
+	margin-right: 5px;
+}
+/*
+相关推荐
+ */
+.recommend{
+	margin-bottom: 50px;
+}
+.recommendBox ul{
+	overflow: hidden;
+}
+.recommendBox ul li{
+    list-style: none;
+    width: 33.333%;
+    float:left;
+    margin-top:5px;
+}
+.recommendBook{
+	margin:0 5px;
+}
+.recommendBookPic{
+    padding:5px;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 3px;
+}
+.recommendBookPic img{
+	width: 100%;
+}
+.recommendBookName{
+	font-size: 14px;
+	color: #2e2f31;
+	margin-top: 5px;
+}
+.recommendBookMail{
+	font-size: 12px;
+	color: #575757;
+}
+/*
+公用
+ */
+.redColor{
+	color: #e62129;
+}
+.orangeColor{
+	color: #eb6100;
+}
+/*弹出层*/
+.codePop{
+	position: fixed;
+	bottom:0;
+	z-index: 11;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.7);
+	display: none;
+}
+.codePopBox{
+	position: fixed;
+	z-index: 12;
+	bottom:0;
+	left:0;
+	width: 100%;
+	background: #fff;
+}
+.codePopText{
+	padding-top: 10px;
+	text-align: center;
+}
+.codePopText p{
+	margin-bottom: 0;
+	color: #404040;
+}
+.codePopPic{
+	width: 112px;
+	height: 112px;
+	margin:0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding:5px;
+	border:1px solid #e5e5e5;
+}
+.codePopPic img{
+	max-width: 100px;
+}
+.codePopBottom{
+	background: #eeeeee;
+	border-top:1px solid #e5e5e5;
+	padding:5px 0;
+}
+.codePopBottom p{
+	margin-bottom: 0;
+	color: #404040;
+	font-size: 12px;
+	text-align: center;
+}
+.codePopBottom p span{
+	font-weight: bold;
+}
+.overflowHidden{
+	overflow:hidden;
+	height:100%;
+}
+
+
+/*赞助人（更多）弹出层*/
+.sponsorPop{
+	position: fixed;
+	bottom:0;
+	z-index: 11;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.7);
+	display: none;
+}
+.sponsorPopBox{
+	position: fixed;
+	z-index: 12;
+	bottom:0;
+	right:0;
+	width: 100%;
+	background: #fff;
+	height:100%;
+	width: 80%;
+}
+.popBox{
+    margin:15px 10px 15px 10px;
+}
+.sponsorLiBottom ul li{
+	margin-top: 10px;
+}
+.genealogyTitleBottom{
+	height: 35px;
+	line-height: 34px;
+}
+
+/*支持者（更多）弹出层*/
+.supporterPop{
+	position: fixed;
+	bottom:0;
+	z-index: 11;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.7);
+	display: none;
+}
+.supporterPopBox{
+	position: fixed;
+	z-index: 12;
+	bottom:0;
+	right:0;
+	width: 100%;
+	background: #fff;
+	height:100%;
+	width: 80%;
+}
+.popBox{
+    margin:15px 10px 15px 10px;
+}
+/*我要支持-弹出层*/
+.supportPop{
+	position: fixed;
+	bottom:0;
+	z-index: 11;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.7);
+	display: none;
+}
+.supportPopBox{
+	position: fixed;
+	z-index: 12;
+	bottom:0;
+	right:0;
+	width: 100%;
+	background: #fff;
+	height:100%;
+	width: 80%;
+}
+.popBox{
+    margin:15px 10px 15px 10px;
+}
+.supportPopTitle{
+	border-bottom: 1px solid #eee;
+    font-size: 15px;
+    font-weight: bold;
+}
+.supportPopTitle span{
+	color: #13d7ca;
+	font-size: 14px;
+	margin-left: 5px;
+}
+.supportPopSubtitle{
+	margin:3px 5px 7px 5px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #242837;
+}
+.museumSupport{
+	margin-right: 15px;
+}
+.museumSupport .supportBox{
+    margin:10px 5px;
+    background: #fff;
+    position: relative;
+    box-shadow: 1px 2px 3px #ddd;
+}
+.supportTitle{
+	margin:5px;
+	padding: 10px 5px 10px 0;
+	border-bottom:1px solid #f4f4f4;
+	color: #404040;
+	font-weight: bold;
+	font-size: 15px;
+}
+.supportTitle span{
+	margin:0 3px;
+}
+.supportPeople{
+	position: absolute;
+	right:10px;
+	top:10px;
+	font-size: 12px;
+	font-weight: normal;
+}
+.supportText{
+	margin:0 10px;
+}
+.supportText p{
+    margin-bottom:0;
+    color: #404040;
+    font-size: 12px;
+}
+.supportWrap{
+	padding:5px 10px 10px 10px;
+	overflow: hidden;
+}
+.supportBtn{
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    background: #02bd8f;
+    padding:0px 8px;
+    float: left;
+}
+.supportSubtitle{
+	float: left;
+	margin-left: 10px;
+}
+.supportSubtitle p{
+	font-size: 10px;
+	margin-bottom: 0;
+	line-height: 16px;
+}

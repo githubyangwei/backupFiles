@@ -1,0 +1,126 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title> 抽奖 </title>
+	<meta name="Generator" content="EditPlus">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript"src='js/layer.m.js'></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/mySystem.js"></script>
+    <script type="text/javascript" src='js/turn.js'></script>
+ </head>
+ <body>
+
+	<div class="title">
+		<img src="img/head.jpg" alt="">
+	</div>
+
+	<div class="red"></div>
+	<div class="myBox">
+		<ul id="cj-a" class="cj">
+			<li class='a1'><img src="img/1.png"  width="95%" height="95%" alt=""></li>
+			<li class='a2'><img src="img/6.png"  width="95%" height="95%" alt=""></li>
+			<li class='a3'><img src="img/3.png"  width="95%" height="95%" alt=""></li>
+			<li class='a4'><img src="img/4.png"  width="95%" height="95%" alt=""></li>
+			<li class='a5'><img src="img/2.png"  width="95%" height="95%" alt=""></li>
+			<li class='a6'><img src="img/5.png"  width="95%" height="95%" alt=""></li>				
+			<li class='a7'><img src="img/6.png"  width="95%" height="95%" alt=""></li>				
+			<li class='a8'><img src="img/1.png"  width="95%" height="95%" alt=""></li>				
+			<li class='a9'><img src="img/4.png"  width="95%" height="95%" alt=""></li>
+			<li class='a10'><img src="img/3.png"  width="95%" height="95%" alt=""></li>
+			<li class='a11'><img src="img/2.png"  width="95%" height="95%" alt=""></li>
+			<li class='a12'><img src="img/5.png"  width="95%" height="95%" alt=""></li>	
+		</ul>
+		<div class="bt"><img src="img/cj.png" alt=""></div>
+	</div>
+
+	<div class="content">
+		
+		<div class="line">&nbsp;</div>
+		<div class="chance">
+			<img src="img/chance.png" alt="">
+		</div>
+		<div class="havechance">
+			<span>您还有</span><span class='yellow'>4</span><span>次抽奖机会</span>
+		</div>
+		<div class="otherhave">
+			<p>别人都抽到了什么</p>
+			<div class="sline"></div>
+		</div>
+		<div dsh="rollTop" line="1" speed="3000" timer="0" class="ding">
+			<ul>
+				<li>
+					<span>sdgsd</span><span>抽到</span><span>3.8元</span>
+				</li>
+				<li>
+					<span>受到的</span><span>抽到</span><span>88.8元</span>
+				</li>
+				<li>
+					<span>山东发货</span><span>抽到</span><span>38.8元</span>
+				</li>
+				<li>
+					<span>斯蒂芬</span><span>抽到</span><span>3.8元</span>
+				</li>
+				<li>
+					<span>史蒂芬港</span><span>抽到</span><span>iPhone 6 Plus</span>
+				</li>
+				<li>
+					<span>暗示法</span><span>抽到</span><span>28.8元</span>
+				</li>
+				<li>
+					<span>sssssssssss</span><span>抽到</span><span>8.8元</span>
+				</li>
+				<li>
+					<span>aaaaa</span><span>抽到</span><span>6.8元</span>
+				</li>
+				<li>
+					<span>aaaaaaassssssssssssssss</span><span>抽到</span><span>28.8元</span>
+				</li>
+			</ul>	
+		</div>
+		<div class="foot"></div>
+	</div>
+	
+ </body>
+ <script type="text/javascript">
+window.onload=function(){
+	var $a=$('.cj').width()
+	var wd=($a)/4;
+	var ht=wd*103/147;
+	$('.cj').luckDraw({
+		width:wd, //宽
+		height:ht, //高
+		line:4, //几行
+		list:4, //几列
+		click:".bt" ,//点击对象
+	});
+	$('.bt').css({
+		top: $(".a1").offset().top+ht,
+		left: $(".a1").offset().left+wd*(1+0.025),
+		width : wd*(2-0.05),
+		height : ht*(2-0.05)
+	});
+	$('.chance').click(function(event) {
+		/* Act on the event */
+		layer.open({
+		    content: '<div style="margin:10px 0;">1、 通过认证马上有5次抽奖机会。</div><div style="margin:10px 0;">2、每成功邀请1名医生加入（通过认证为准），即可获得5次抽奖机会。</div>',
+		    btn: ['确定']
+		});
+	});
+	$('.bt').click(function(event) {
+		$('.bt>img').attr('src', 'img/cj-active.png');
+		setTimeout(function(){
+			$('.bt>img').attr('src', 'img/cj.png');
+		}, 200)
+	});
+}
+
+ 	
+</script>
+ </html>

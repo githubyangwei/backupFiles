@@ -1,0 +1,73 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>登陆</title> 
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta name="description" content="登陆" /> 
+<meta content=”telephone=no,email=no” name=”format-detection” /> 
+<meta name="Keywords" content="登陆"> 
+<meta name="apple-mobile-web-app-title" content="登陆界面 "> 
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<style type="text/css">
+.m-bg-pic,.m-bg-pic>img{width: 100%;text-align: center;}
+.m-bg-pic>img{max-width: 640px;}
+.m-login{position: relative;width: 92%;max-width: 640px;margin: 0 auto;padding-top: 20px;}
+.m-login .m-lg-in,.m-login .m-lg-reg{width: 100%;height: 50px;font-size: 18px;}
+.m-login .m-into-user{border:1px solid #E2E5F2;height: 50px;line-height: 50px;background-color: white}
+.m-login .m-into-user:nth-of-type(1){border-bottom: none;}
+.m-login .m-into-user>img{width: 28px;height: 28px;float: left;margin: 11px 0 0 10px;}
+.m-login .m-into-user>div{margin-left: 45px;}
+.m-login .m-into-user>div>input{width: 100%;border:none;font-size: 18px}
+.m-login .m-lg-in{background-color: #C20E0E;border: 1px solid #C20E0E;color:white;border-radius: 5px;margin: 16px 0 8px;}
+.m-login .m-lg-reg{background-color: white;border: 1px solid #FFC132;border-radius: 5px;margin: 8px 0;color: #9094A8;}
+.m-login .m-forget{margin: 10px 10px 30px 10px}
+.m-login .m-right{position: absolute;right: 10px;bottom: 0;}
+.m-login .m-forget>a,.m-login .m-right>a{color: #9094A8;font-size: 16px}
+.weixin{text-align: center;}
+.weixin img{max-width: 620px;}
+#weixin{width: 60px;height: 60px;margin: 20px;}
+@media screen and (max-width :325px) {
+.m-login .m-lg-in,.m-login .m-lg-reg,.m-login .m-into-user>div>input{font-size: 16px;}
+.m-login .m-forget>a,.m-login .m-right>a{font-size: 14px} 
+}
+</style>
+</head> 
+<body>  
+<!-- 登陆页图  -->
+<div class="m-bg-pic">
+    <img src="../img/login_pic.jpg" alt="">
+</div>
+<!-- 登陆部分 -->
+<div class="m-login">
+     <form action="news.html"> 
+        <div class='m-into-user'><img src="../img/name.png" alt=""><div><input type="text" placeholder='手机号|用户名' class="m-lg-name"></div></div>
+        <div class='m-into-user'><img src="../img/pwd.png" alt=""><div><input type="password" placeholder='请输入密码' class="m-lg-pwd"></div></div>
+        <input type="submit" value='登陆' class="m-lg-in">
+    </form> 
+    <div class="m-forget"><a href="forget.html">忘记密码？</a></div>
+    <div class="m-right"><a href="register.html">我要注册</a></div>
+</div>
+<div class="weixin">
+    <div><img src="../img/weixline.png" width='100%' alt=""></div>
+    <img src="../img/weixin.png" alt="" id="weixin">
+</div>
+</body> 
+<script type="text/javascript" src='../js/jquery-1.8.3.min.js'></script>
+<script type="text/javascript" src="../js/tips.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        // setTimeout(function(){
+        //     tips('测试下',function(){
+                
+        //     })
+        // }, 2000)
+        $('#weixin').click(function(event) {
+            /* Act on the event */
+            alert('点击微信了')
+        });
+
+    });
+</script>
+</html>

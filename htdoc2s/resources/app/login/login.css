@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-09-26 15:46:01
+ * @version $Id$
+ */
+body{
+	font-family: "微软雅黑";
+}
+.registerText{
+	position: relative;
+    z-index: 20;
+	font-size: 14px!important;
+	padding-top: 12px;
+}
+.login{
+	margin:64px 10px 0 10px;
+	background:#fff;
+	border-radius: 5px;
+	box-shadow: 0px 2px 3px #ddd;
+}
+.loginBox{
+	padding:0 10px;
+	position: relative;
+}
+.borderBottom{
+	border-bottom: 1px solid #e5e5e5;
+}
+.loginName{
+	width: 50px;
+	font-size: 14px;
+	position: absolute;
+	text-align: center;
+	color: #4098fa;
+	line-height: 50px;
+}
+.loginLine{
+	position: absolute;
+	height: 20px;
+	width: 1px;
+	background:#b3b3b3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0.5, #b3b3b3), to(rgb(255, 255, 255)));
+    background: -o-linear-gradient(top,#fff,#b3b3b3, #fff);
+    background: -moz-linear-gradient(top,#fff,#b3b3b3, #fff);
+	top:15px;
+	left:62px;
+}
+.loginInput{
+	margin-left: 50px;
+}
+.loginInput input{
+	margin:5px 0;
+	border:0;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.loginBtn{
+	margin:20px 10px 10px 10px;
+	margin-top: 20px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 5px;
+	background: #4098fa;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+}

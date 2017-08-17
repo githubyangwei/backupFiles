@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="target-densitydpi=device-dpi,width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		html,body{height: 100%;background: #9e9e9e}
+	</style>
+</head>
+<body class='relative'>
+	<div class="top relative">
+		<img src="img/zhuye-top-bac.jpg" height="822" width="1462" alt="" class="top-bac">
+		<div class="cancel absolute" id='cancel'>取消关注</div>
+		<div class="top_footer overflow relative">
+			<img src="img/heart.png" class="zhuye_heart left">
+			<p class="title absolute">EXO</p>
+			<span class="left counts">3600</span>
+			<div class="focus right" id='focus'>+ 关注</div>
+			
+		</div>
+	</div>
+	<ul class="main">
+		<img src="img/zhuye-pic1.jpg" alt="" class="left photos">
+		<img src="img/zhuye-pic2.jpg" alt="" class="left photos">
+		<img src="img/zhuye-pic3.jpg" alt="" class="left photos">
+		<img src="img/zhuye-pic4.jpg" alt="" class="left photos">
+		<img src="img/zhuye-pic1.jpg" alt="" class="left photos">
+		<img src="img/zhuye-pic2.jpg" alt="" class="left photos">
+		<img src="img/zhuye-pic3.jpg" alt="" class="left photos">
+	</ul>
+</body>
+<script src='zepto.min.js' type="text/javascript"></script>
+<script type="text/javascript">
+ var oWidth=$('body').width();
+ var top_bac=$('.top-bac');
+ top_bac.css({'height':oWidth*0.65+'px','width':'100%','vertical-align':'top'});
+ $('.main>img').height($('.main>img').width());
+ $('.photos').on('tap',function()
+ {
+ 	window.location.href='xiangce.html';
+
+ })
+ $('#focus').on('tap',function()
+ {
+ 	alert('关注');
+ 	$(this).css('display', 'none');
+ 	$('#cancel').css('display', 'block');
+ 	$('<div class="focus right" id="up">上传照片</div>').insertBefore('.title');
+ })
+ $('#cancel').on('tap',function()
+ {
+ 	$(this).css('display', 'none');
+ 	$('#up').remove();
+ 	$('#focus').css('display', 'block');
+ })
+  $('.zhuye_heart,.counts').on('tap',function()
+ {
+ 	alert('赞');
+ })
+</script>
+</html>

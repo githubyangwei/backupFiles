@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body{
+	font-family: '微软雅黑';
+}
+.clear{
+	clear: both;
+}
+.mui-bar{
+	background: #f17f34!important;
+}
+.mui-icon-back:before, .mui-icon-left-nav:before{
+	color: #fff;
+}
+.mui-pull-right{
+	color: #fff!important;
+}
+.mui-title{
+	color: #fff;
+}
+.muiBarBottom .mui-active{
+	color: #f27e31!important;
+}
+.muiBarBottom{
+	background: #f6f6f6!important;
+}

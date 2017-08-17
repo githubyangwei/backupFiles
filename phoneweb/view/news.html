@@ -1,0 +1,151 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>新闻</title> 
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta name="description" content="新闻" /> 
+<meta content=”telephone=no,email=no” name=”format-detection” /> 
+<meta name="Keywords" content="新闻"> 
+<meta name="apple-mobile-web-app-title" content="新闻界面 "> 
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper3.08.min.css">
+<link rel="stylesheet" type="text/css" href="../css/news.css">
+<link rel="stylesheet" type="text/css" href="../css/pullToRefresh.css">
+</head> 
+<body>
+<div id="wrapper">
+    <ul>
+        <li>
+            <div class="m-banner"></div>
+            <div class="m-header">
+                <span>新闻</span>
+                <a href='#' class="m-h-left-m"></a>
+                <a href='search.html' class="m-h-right-sq"></a>
+            </div>
+            <!-- 导航 -->
+            <div class="m-nav">
+                <ul>
+                    <li class='active'>最头条</li>
+                    <li>新鲜事</li>
+                    <li>社会</li>
+                    <li>本地</li>
+                    <li>娱乐</li>
+                </ul>
+            </div>
+
+            <!-- 焦点图部分 -->
+            <div class="m-looppic swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href='#'><img src="../img/test.jpg" alt=""><p>世界上最快的跑车2</p></a></div>
+                    <div class="swiper-slide"><a href='#'><img src="../img/test.jpg" alt=""><p>世界上最快的跑车3</p></a></div>
+                    <div class="swiper-slide"><a href='#'><img src="../img/test.jpg" alt=""><p>世界上最快的跑车4</p></a></div>
+                    <div class="swiper-slide"><a href='#'><img src="../img/test.jpg" alt=""><p>世界上最快的跑车5</p></a></div>
+                    <div class="swiper-slide"><a href='#'><img src="../img/test.jpg" alt=""><p>世界上最快的跑车6</p></a></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- 新闻 -->
+            <div class="m-news">
+                <!-- 新闻类型1 -->
+                <ul class="news-one-pic">
+                    <li>
+                        <a href="detail.html"><img src="../img/news.jpg" alt=""></a>
+                        <div>
+                            <p><a href="">三峡大坝3次调控减少出库水 流量 船体渐露水面</a></p>
+                            <span><a href="">观察者</a></span>
+                            <span><a href="">24分钟前</a></span>
+                            <span><a href="">12</a></span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href=""><img src="../img/news.jpg" alt=""></a>
+                        <div>
+                            <p><a href="">三峡大坝3次调控减少出库水 流量 船体渐露水面</a></p>
+                            <span><a href="">观察者</a></span>
+                            <span>24分钟前</span>
+                            <span><a href="">12</a></span>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 新闻类型2 -->
+                <ul class="news-more-pic">
+                    <li>
+                        <p><a href="">三峡大坝3次调控减少出库水 流量 船体渐露水面</a></p>
+                        <a href=""><img src="../img/new.jpg" alt=""></a>
+                        <a href=""><img src="../img/new.jpg" alt=""></a>
+                        <a href=""><img src="../img/new.jpg" alt=""></a>
+                        <div class="f-clear"></div>
+                        <span><a href="">搜狐</a></span>
+                        <span>刚刚</span>
+                        <span><a href="">1222</a></span>             
+                    </li>
+                    <li>
+                        <p><a href="">三峡大坝3次调控减少出库水 流量 船体渐露水面</a></p>
+                        <a href=""><img src="../img/new.jpg" alt=""></a>
+                        <a href=""><img src="../img/new.jpg" alt=""></a>
+                        <a href=""><img src="../img/new.jpg" alt=""></a>
+                        <div class="f-clear"></div>
+                        <span><a href="">搜狐</a></span>
+                        <span>刚刚</span>
+                        <span><a href="">1222</a></span>             
+                    </li>
+                </ul>
+                <!-- 新闻类型3 -->
+                <ul class="news-none-pic">
+                    <li>       
+                        <p><a href="">台风预警升级为黄色中国气象局启动Ⅲ级应急</a></p>
+                        <span><a href="">搜狐</a></span>
+                        <span>刚刚</span>
+                        <span><a href="">1222</a></span>             
+                    </li>
+                    <li>       
+                        <p><a href="">台风预警升级为黄色中国气象局启动Ⅲ级应急</a></p>
+                        <span><a href="">搜狐</a></span>
+                        <span>刚刚</span>
+                        <span><a href="">1222</a></span>             
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+            
+<!-- <div class="m-load" id='wrapper'>
+    加载更多……
+</div> -->
+</body> 
+<script type="text/javascript" src='../js/jquery-1.8.3.min.js'></script>
+<script type="text/javascript" src='../js/swiper3.08.jquery.min.js'></script>
+<script type="text/javascript" src="../js/iscroll.js"></script>
+<script type="text/javascript" src="../js/pullToRefresh.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay : 3000,
+        speed:500,
+        autoplayDisableOnInteraction : false,
+        pagination: '.swiper-pagination',
+    })
+    refresher.init({
+        id:"wrapper",
+        pullDownAction:Refresh,
+        pullUpAction:Load
+    });
+
+    function Load() {
+    setTimeout(function () {
+        var str=$('.m-news').html();
+           $(".m-news").append(str);
+        // alert("message")
+        myScroll.refresh();
+    }, 1000);}
+     function Refresh() {}
+
+</script>
+</html>
